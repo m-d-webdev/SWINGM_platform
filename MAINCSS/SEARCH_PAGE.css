@@ -1,0 +1,1162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Amiri", serif;
+  font-size: 14px !important;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
+  padding: 6px;
+}
+
+#btn_back:hover .btn_backimg {
+  transform: translateX(-15px);
+}
+#btn_back img {
+  transition: 0.2s;
+  width: 15px;
+  margin-right: 20px;
+}
+
+#btn_back {
+  position: absolute;
+  padding: 2px;
+  top: 5px;
+  left: 10px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  background-color: #1a73e8;
+  color: #fff;
+}
+
+.cnt_logo img {
+  width: 110px;
+}
+
+.cnt_logo {
+  margin-top: 100px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.cnt_search_bare form {
+  width: 100%;
+}
+
+.cnt_search_bare input::placeholder {
+  font-size: 13px !important;
+}
+.cnt_search_bare input {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  direction: rtl;
+}
+
+.cnt_search_bare img {
+  width: 20px;
+
+  margin-left: 15px;
+}
+
+.cnt_search_bare {
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+  justify-content: center;
+  max-width: 800px;
+  padding-right: 20px;
+  filter: drop-shadow(0 0 10px #fff);
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  border: solid 1px rgba(0, 0, 0, 0);
+}
+
+.cnt_type_items {
+  position: relative;
+  border-right: 1px black solid;
+}
+
+#btn_type_item {
+  position: relative;
+  width: 80px;
+  background-color: transparent;
+  border: none;
+}
+
+.TYPE_ITEME button img {
+  width: 18px;
+  position: absolute;
+  left: 2px;
+}
+
+.TYPE_ITEME button:hover::after {
+  width: 100%;
+}
+
+.TYPE_ITEME button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  transition: 0.2s;
+  background-color: #1a73e8;
+  right: 0;
+  bottom: 0;
+}
+
+.TYPE_ITEME button p {
+  z-index: 2;
+  margin-right: 5px;
+}
+
+.TYPE_ITEME button:hover {
+  color: #fff;
+}
+
+.TYPE_ITEME button {
+  margin-top: 15px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  padding: 2px;
+  position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+.TYPE_ITEME {
+  position: absolute;
+  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.163));
+  padding: 5px;
+  background-color: white;
+  top: 60px;
+  width: 100px;
+  left: 0;
+  display: flex;
+  border-radius: 5px;
+  z-index: 6;
+  flex-direction: column;
+  display: none;
+  animation-duration: 0.3s;
+}
+
+.MAIN_Suggestions {
+  position: relative;
+  width: 600px;
+  padding: 10px;
+  left: 0;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.092));
+  flex-direction: column;
+  transition: 1s;
+  align-items: end;
+  min-height: 60px;
+  display: none;
+}
+.suggest:hover {
+  background-color: #1a73e8;
+  color: #fff;
+}
+.suggest {
+  width: 100%;
+  text-align: end;
+  padding: 4px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+  position: relative;
+  padding-left: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.typeSgest {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 11px !important;
+  opacity: 0.7;
+}
+/* results----------------------------- */
+.cnt_results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.cntMa9alatFounded {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.17));
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  z-index: 1 !important;
+  display: none;
+  background-color: #f8fdff4b;
+}
+
+.elemArticle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px 0;
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+.titleArticle {
+  font-size: 20px !important;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.m9l_text {
+  width: 100%;
+  text-align: end;
+}
+
+.interactioArticle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.cnt_imgUserARTICLE img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cnt_nameuserARTICLE:hover::after {
+  width: 100%;
+}
+.cnt_nameuserARTICLE:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  transition: 0.2s;
+  background-color: #000000;
+  right: 0;
+  bottom: 0;
+}
+.cnt_nameuserARTICLE {
+  cursor: pointer;
+  margin-right: 10px;
+  position: relative;
+}
+.cnt_imgUserARTICLE {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.titleCntFounded {
+  position: absolute;
+  top: 5px;
+  font-size: 12px !important;
+  right: 15px;
+}
+/* results----------------------------- */
+.cntBooksFounded {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.17));
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+
+.book {
+  max-width: 22%;
+  min-width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 16px 15px 3px 15px;
+  position: relative;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.075));
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: none;
+}
+
+/* bookComponent +++++++++++++++++++++++++++=====================*/
+
+.bookComponent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  position: relative;
+}
+
+.nameBook {
+  font-size: 16px !important;
+  text-align: center;
+}
+
+/*bookProfil ==============================================================  */
+
+.cntImage img:hover {
+  transform: scale(1.2);
+}
+.cntImage img {
+  width: 100%;
+  transition: 0.2s;
+  max-height: 400px;
+}
+
+.cntImage {
+  width: 100%;
+  max-width: 100%;
+  transition: 0.2s;
+  overflow: hidden;
+  /* max-height: 500px; */
+  /* overflow: hidden; */
+  /* height: 700px; */
+}
+/* bookComponent +++++++++++++++++++++++++++===================== */
+.cntPeopelFounded {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.17));
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+
+.elemUser {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px 0;
+  padding: 5px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.078));
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+
+.cnt_imgUser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.elemUser p {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cnt_imgUser {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.cntessonsFounded {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.17));
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+
+.spraye {
+  /* width: 100%; */
+  width: 46%;
+  min-width: 450px;
+  padding: 20px 20px 10px 20px;
+  padding-top: 35px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.126));
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+  position: relative;
+}
+.descSpareer {
+  position: absolute;
+  top: 5px;
+  font-size: 12px !important;
+  right: 10px;
+}
+
+.title_sprayer {
+  width: 100%;
+  padding: 15px;
+  font-size: 17px !important;
+  /* color: #fff; */
+  font-family: "Cairo", sans-serif;
+  text-align: end;
+  font-weight: 900;
+  background-color: #0099ff45;
+}
+
+.btn_get_sprayer2 img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.btn_get_sprayer img {
+  width: 20px;
+  margin-right: 10px;
+}
+.btn_get_sprayer2 {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 6px;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.342);
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_get_sprayer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: #000000;
+  padding: 6px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.T {
+  padding: 10px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f7;
+  flex-direction: column;
+  margin-top: 20px;
+  display: none;
+}
+
+.cntContentLesson {
+  width: 100%;
+  /* max-height: 500px; */
+  overflow: auto;
+}
+
+.vedio-tutorial {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.descrVideo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titleLesson {
+  font-size: 17px !important;
+
+  font-family: "Cairo", sans-serif;
+  text-align: end;
+}
+
+.interactioVideo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.L {
+  padding: 10px;
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f7;
+  margin-top: 15px;
+  flex-direction: column;
+  display: none;
+}
+
+.cntContentLessonL {
+  /* margin-top: 15px; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.btnShowText {
+  color: blue;
+  font-size: 13px !important;
+  cursor: pointer;
+}
+.bigTile p:hover ~ .cntButtonREGLE {
+  opacity: 1;
+}
+
+.bigTile p {
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  color: red;
+}
+
+.bigTile img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.bigTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  display: none;
+}
+
+.secondTile p:hover ~ .cntButtonREGLE {
+  opacity: 1;
+}
+
+.secondTile p {
+  font-size: 15px;
+  font-family: "Cairo", sans-serif;
+  color: rgb(2, 194, 6);
+}
+
+.secondTile img {
+  width: 18px;
+  margin-left: 10px;
+}
+
+.secondTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  display: none;
+  position: relative;
+  margin-top: 12px;
+}
+
+.thirdTile p:hover ~ .cntButtonREGLE {
+  opacity: 1;
+}
+
+.thirdTile p {
+  font-size: 14px;
+  font-family: "Cairo", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.thirdTile img {
+  width: 16px;
+  margin-left: 10px;
+}
+
+.thirdTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  display: none;
+  position: relative;
+  margin-top: 13px;
+}
+
+.textLesson p:hover ~ .cntButtonREGLE {
+  opacity: 1;
+}
+
+.textLesson p {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+}
+
+.textLesson {
+  /* width: 100%; */
+  display: none;
+  position: relative;
+  margin-top: 15px;
+}
+
+/*  */
+.lessonAsPDF {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f6f7;
+  align-items: end;
+  padding: 15px;
+  max-width: 500px;
+  margin: 10px 5px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.126));
+  margin-top: 25px;
+  display: none;
+  border-radius: 10px;
+}
+
+.linkPDF_lesson img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.linkPDF_lesson {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.233);
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.linkPDF_lesson2 img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.linkPDF_lesson2 {
+  width: 100%;
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 15px;
+}
+
+/*  */
+
+.noResuEleme img {
+  width: 100px;
+  margin-bottom: 50px;
+}
+.noResuEleme p {
+  font-size: 20px;
+}
+.noResuEleme {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  display: none;
+}
+.FounOwnData {
+  width: 100%;
+  text-align: end;
+  margin: 10px 0;
+  opacity: 0.8;
+}
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 10px !important;
+  }
+
+  #btn_back img {
+    width: 16px;
+    margin-right: 15px;
+  }
+
+  #btn_back {
+    padding: 2px;
+    left: 10px;
+    width: 100px;
+  }
+
+  .cnt_logo {
+    margin-bottom:10px;
+  }
+
+  .cnt_logo img {
+    width: 60px;
+  }
+  .cnt_search_bare {
+    padding: 3px;
+    padding-right: 10px;
+    max-width: 500px;
+    width: 94%;
+  }
+
+  .cnt_search_bare img {
+    width: 18px;
+  }
+
+  .cnt_search_bare input {
+    padding: 3px;
+  }
+  
+.MAIN_Suggestions {
+  width: 100%;
+}
+.cnt_results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.cntMa9alatFounded {
+  filter: none;
+  border: solid 1px rgba(0, 0, 0, 0.077);
+  padding: 5px;
+  padding-top: 15px;
+}
+
+.elemArticle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px 0;
+  padding: 4px;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  display: none;
+}
+.titleArticle {
+  font-size: 14px !important;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.cntBooksFounded {
+  filter:none;
+  border: solid 1px rgba(0, 0, 0, 0.077);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+
+.cntPeopelFounded {
+  filter: none;
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.077);
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+.cntessonsFounded {
+  filter:none;
+  border: solid 1px rgba(0, 0, 0, 0.077);
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+}
+  .spraye {
+    /* width: 100%; */
+    width: 100%;
+    min-width: 0;
+    padding: 25px 20px 10px 20px;
+    margin-top: 0px;
+    border: solid 1px rgba(0, 0, 0, 0.153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    border-radius: 5px;
+    margin-top: 13px;
+    position: relative;
+  }
+
+
+  .title_sprayer {
+    padding: 10px;
+    font-size: 12px !important;
+  }
+
+  .btn_get_sprayer2 img {
+    width: 13px;
+    margin-right: 10px;
+  }
+
+  .btn_get_sprayer img {
+    width: 13px;
+    margin-right: 10px;
+  }
+
+  
+.btn_get_sprayer2 {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.342);
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_get_sprayer {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #000000;
+  padding: 3px;
+  border-radius: 20px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+
+  .T {
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+    display: none;
+  }
+
+  .cntContentLesson {
+    width: 100%;
+    /* max-height: 500px; */
+    overflow: auto;
+  }
+
+  .vedio-tutorial {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .titleLesson {
+    font-size: 18px;
+    font-family: "Cairo", sans-serif;
+    text-align: end;
+  }
+
+  .interactioVideo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    padding: 3px;
+  }
+
+  .L {
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f7;
+    margin-top: 15px;
+    flex-direction: column;
+    display: none;
+  }
+
+  .cntContentLessonL {
+    /* margin-top: 15px; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3px;
+  }
+
+  .bigTile p {
+    font-size: 10px !important;
+    font-family: "Cairo", sans-serif;
+    color: red;
+    max-width: none;
+  }
+
+  .bigTile img {
+    width: 20px;
+    margin-left: 5px;
+  }
+
+  .bigTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    max-width: none;
+    margin-right: 0;
+    display: none;
+  }
+
+  .secondTile p:hover ~ .cntButtonREGLE {
+    opacity: 1;
+  }
+
+  .secondTile p {
+    font-size: 9.5px !important;
+    font-family: "Cairo", sans-serif;
+    color: rgb(2, 194, 6);
+    max-width: none;
+  }
+
+  .secondTile img {
+    width: 15px;
+    margin-left: 5px;
+  }
+
+  .secondTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    display: none;
+    max-width: none;
+    position: relative;
+    margin-top: 8px;
+  }
+
+  .thirdTile p:hover ~ .cntButtonREGLE {
+    opacity: 1;
+  }
+
+  .thirdTile p {
+    font-size: 9px !important;
+    font-family: "Cairo", sans-serif;
+    color: rgb(0, 0, 0);
+    max-width: none;
+  }
+
+  .thirdTile img {
+    width: 13px;
+    margin-left: 5px;
+  }
+
+  .thirdTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15x;
+    display: none;
+    max-width: none;
+    position: relative;
+    margin-top: 5px;
+  }
+
+  .textLesson p {
+    font-family: "Cairo", sans-serif;
+    font-size: 9px !important;
+  }
+
+  .textLesson {
+    /* width: 100%; */
+    display: none;
+    position: relative;
+    max-width: none;
+    margin-top: 12px;
+  }
+
+  /*  */
+  .lessonAsPDF {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f4f6f7;
+    align-items: end;
+    padding: 15px;
+    max-width: 500px;
+    margin: 10px 5px;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .linkPDF_lesson img {
+    width: 15px;
+    margin-right: 10px;
+  }
+
+  .linkPDF_lesson {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.345);
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 15px;
+  }
+
+  .linkPDF_lesson2 img {
+    width: 15px;
+    margin-right: 10px;
+  }
+
+  .linkPDF_lesson2 {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+  }
+}
+
+.display {
+  display: flex;
+}
+
+.s-X3z-V4rB-H8tQ {
+  display: flex;
+}

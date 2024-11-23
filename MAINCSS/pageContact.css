@@ -1,0 +1,151 @@
+* {
+    font-family: "Cairo", serif;
+    font-size: 14px !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 18px !important;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input:focus,
+textarea:focus {
+    border: solid 1px rgb(58, 58, 255);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.contact-info p strong {
+    margin-left: 15px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    * {
+        font-size: 10px !important;
+    }
+    
+    body {
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        color: #333;
+        font-size: 12px !important;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border: solid 1px rgb(58, 58, 255);
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        outline: none;
+        resize: none;
+        border-radius: 5px;
+    }
+    
+    button {
+        padding: 5px 20px;
+        background-color: #5cb85c;
+        color: white;
+        width: 180px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #4cae4c;
+    }
+    
+    .contact-info p strong {
+        margin-left: 15px;
+    }
+    
+    .contact-info {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+}

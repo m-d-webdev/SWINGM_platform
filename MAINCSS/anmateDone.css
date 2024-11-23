@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+.d_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadowDIV {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    z-index: 5;
+    left: 0;
+    display: none;
+}
+.shadowDIV2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    z-index: 5;
+    left: 0;
+    display: none;
+}
+
+.PUP_UPASK_YES_NO {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    animation-duration: .2s;
+
+    border-radius: 10px;
+}
+
+.MessgaeText {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.cnt_btns button {
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+.cnt_btns #btn_accept {
+    background-color: rgb(14, 111, 92);
+    color: #fff;
+}
+
+.cnt_btns {
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.IconeMessageSuccess {
+    width: 100px;
+    display: none;
+}
+
+.IconeMessageNotice {
+    display: none;
+    width: 100px;
+
+}
+
+.IconeMessageError {
+    display: none;
+    width: 100px;
+}
+
+.IconNotConnected {
+    display: none;
+    width: 100px;
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.containerLoader p{
+    margin-top: 10px;
+}
+.containerLoader{
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.loader {
+    width: 70px;
+    aspect-ratio: 1;
+    background:
+        radial-gradient(farthest-side, #ffa516 90%, #0000) center/16px 16px,
+        radial-gradient(farthest-side, green 90%, #0000) bottom/12px 12px;
+    background-repeat: no-repeat;
+    animation: l17 1s infinite linear;
+    position: relative;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    aspect-ratio: 1;
+    inset: auto 0 16px;
+    margin: auto;
+    background: #000000;
+    border-radius: 50%;
+    transform-origin: 50% calc(100% + 10px);
+    animation: inherit;
+    animation-duration: 0.5s;
+}
+
+@keyframes l17 {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    * {
+        margin: 0;
+        ;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Cairo", sans-serif;
+        font-size: 10px;
+    }
+
+
+    .PUP_UPASK_YES_NO {
+        width: 95%;
+        max-width: none;
+        height: 300px;
+    }
+
+
+    .MessgaeText {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .cnt_btns button {
+        min-width: 100px;
+        padding: 5px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    .cnt_btns #btn_accept {
+        background-color: rgb(14, 111, 92);
+        color: #fff;
+    }
+
+    .cnt_btns {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .IconeMessageSuccess {
+        width: 60px;
+        display: none;
+    }
+
+    .IconeMessageNotice {
+        display: none;
+        width: 60px;
+
+    }
+
+    .IconeMessageError {
+        display: none;
+        width: 60px;
+    }
+
+    .IconNotConnected {
+        display: none;
+        width: 60px;
+    }
+
+    .s-X3z-V4rB-H8tQ {
+        display: flex;
+    }
+}
+
+
+.s-X3z-V4rB-H8tQ {
+    display: flex;
+}

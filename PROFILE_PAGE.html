@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ResearcherSpace/css/style_cnt_ma9al.css" />
+    <link rel="stylesheet" href="MAINCSS/PROFILE_PAGE.css" />
+    <link rel="stylesheet" href="./MAINCSS/anmateDone.css">
+  </head>
+
+  <body dir="rtl">
+    <div class="NavBare">
+      <button class="" id="btn_logout">
+        <img src="./MEDIA/power-off.png" alt="" />
+        <p>تسجيل الخروج</p>
+      </button>
+      <div class="cntImgUSER">
+        <img src="" alt="" />
+      </div>
+      <button class="btnNAvebare" id="btn_sett">
+        <img src="./MEDIA/settings (1).png" alt="" />
+      </button>
+      <a class="btnNAvebare" id="btn_notificto">
+        <img src="./MEDIA/ringing.png" alt="" />
+      </a>
+
+      <a href="main.html" class="btnBack">
+        <img src="./MEDIA/home.png" alt="" />
+        <p>الرئسية</p></a
+      >
+      <button id="btn_back">
+        <img src="./ResearcherSpace/icones2/left.png" class="imgBack" alt="" />
+        <p>عودة</p>
+      </button>
+    </div>
+    <div class="main_page">
+      <div class="MainSetting animate__animated">
+        <button class="menu_com2 chooedButton" id="btnGetInfo">
+          <img src="./MEDIA/contact.png" alt="" />
+          <p>المعلومات الشخصية</p>
+        </button>
+        <button href="" class="menu_com2" id="btnGetLibrary">
+          <img src="./MEDIA/book.png" alt="" />
+          <p>مكتبتي</p>
+        </button>
+        <button href="" class="menu_com2" id="btnGetSaved">
+          <img src="./MEDIA/bookmark copy.png" alt="" />
+          <p>العناصر المحفوظة</p>
+        </button>
+      </div>
+      <div class="mainInfo animate__animated animate__zoomIn">
+        <div class="elem1">
+          <div class="cnt_img_user">
+            <img
+              src="https://i.pinimg.com/474x/77/2b/3f/772b3fb46afe6bf9100dae00fb83761d.jpg"
+              alt=""
+            />
+          </div>
+          <p class="" id="userJob">Unknow</p>
+        </div>
+        <div class="elem2">
+          <h1 class="full_Name_user">غيره معروف</h1>
+          <p class="userAdress" id="userIdentufyer">المعرف : 0</p>
+        </div>
+        <div class="elem3">
+          <div class="cnt_Frend_div3">
+            <div id="bnt_follwes" class="follee_compoent2">
+              <p>متابعين</p>
+              <p class="IMP_ELE1" id="inerFOLLOWERS">0</p>
+            </div>
+
+            <div id="btn_follwing" class="follee_compoent2">
+              <p>أتابع</p>
+              <p class="IMP_ELE1" id="innerFOLLOWING">0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="libraryBooks animate__animated animate__zoomIn">
+        <div class="IntroCard">
+          <img src="./MEDIA/books.png" alt="" />
+          <p>مكتبتي</p>
+        </div>
+        <div class="listBooks">
+          <div class="cntBook">
+            <div class="cnt_imgBook">
+              <img/>
+            </div>
+            <a href="" style="display: none;" class="likForBook"></a>
+            <h1 class="bookName">The best Evry day</h1>
+            <button class="btnRemoveF_library">حدف من المكتبة </button>
+          </div>
+        </div>
+      </div>
+      <div class="savedItems animate__animated animate__zoomIn">
+        <div class="IntroCard">
+          <img src="./MEDIA/save-instagram.png" alt="" />
+          <p>العناصر المحفوظة</p>
+        </div>
+        <div class="listSavedItems">
+          <div class="MA9AL">
+            <h1 class="titleMa9alSaved"></h1>
+            <p class="contentMa9al"></p>
+            <button class="bntRemoveMa9al">حذف</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="FILTER_DIV">
+      <div class="cnt_fullLISTFRIEND">
+        <p class="title_cntasd"></p>
+        <div class="list_follers"></div>
+        <div class="cnt_followers">
+          <button class="edt_st_btn">إلغاء المتابعة</button>
+          <div class="cnt_imgFOL">
+            <img src="" alt="" />
+          </div>
+          <p class="cnt_nameuser">الأصدقاء</p>
+        </div>
+      </div>
+      <div class="cnt_notifications">
+        <p class="title_cntasd">الإشعارات</p>
+        <div class="list_notf">
+          <div class="cnt_notif">
+            <div class="cnt_imgnotf">
+              <img src="" alt="" />
+            </div>
+            <p class="time_notf"></p>
+            <p class="notif_text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="otherInfoELEM animate__animated animate__bounceInUp">
+        <button id="btnCancelEdit">
+          <img src="./MEDIA/close.png" alt="" />
+        </button>
+        <p class="titleEidtInof">
+          <img src="./MEDIA/edit.png" alt="" /> تعديل المعلومات الشخصية
+        </p>
+        <div class="compInof">
+          <input type="text" id="inpFirstNmae" placeholder="" />
+          <label class="lblEdit" for="inpFirstNmae">الإسم الأول </label>
+        </div>
+        <div class="compInof">
+          <input type="text" id="inpLastName" placeholder="" />
+          <label class="lblEdit" for="inpLastName">الإسم الأخير </label>
+        </div>
+        <div class="compInof">
+          <label class="lblEdit2" for="inpOccupation">الصفة </label>
+          <select id="inpOccupation">
+            <option value="أستاذ">أستاذ</option>
+            <option value="طالب">طالب</option>
+            <option value="تلميذ">تلميذ</option>
+            <option value="باحث">باحث</option>
+            <option value="أخر">آخر</option>
+          </select>
+        </div>
+        <div class="compInof">
+          <input type="text" id="inpEmailEdit" placeholder="" />
+          <label class="lblEdit" for="inpEmailEdit"> البريد الإكتروني </label>
+        </div>
+
+        <button id="btn_saveEdit">
+          <p>حفظ</p>
+          <img src="./MEDIA/bookmark.png" alt="" />
+        </button>
+        <div class="compInof">
+          <button id="change_pic">
+            <p>تعديل الصورة الشخصية</p>
+            <div class="cntOmgToEdit">
+              <img
+                src="./PHOTOS/66b0b4cf406b76.12612346.download(2).jpg"
+                alt=""
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="CNT_OCNFIRMDIV">
+      <div class="cntConfirm animate__animated animate__slideInDown">
+        <img
+          src="./MEDIA/help.png"
+          class="animate__animated animate__headShake"
+          alt=""
+        />
+        <p class="title_cntasd">تاكيد</p>
+        <h4>هل تريد حذف هذا العنصر ؟</h4>
+        <div class="cntBtnsConfirm">
+          <button id="btnCancel">إلغاء</button>
+          <button id="btnAccept">تاكيد</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./MAINJS/anmateDone.js"></script>
+    <script src="MAINJS/PROFILE_PAGE.js"></script>
+  </body>
+</html>

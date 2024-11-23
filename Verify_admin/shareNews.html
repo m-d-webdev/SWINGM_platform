@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/shareNew.css">
+
+</head>
+
+<body>
+    <main class="main_page">
+        <div class="bare_page">
+            <a class="logo" href="http://localhost/SWINGM2/main.html">
+                <img src="icones/logo_rem.png" alt="">/
+            </a>
+            <div class="cnt_info_user">
+                <div class="user_info">
+                    <p class="full_name2"></p>
+                    <div class="cnt_prof_pic">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="cnt_matr_connect">
+                    <a href="page_sign_in.html" id="btn_connect_ac">انشاء حساب جديد <img src="icones/add-user.png"
+                            alt=""></a>
+                    <a href="page_login.html" id="btn_connect_ac2">تسجيل الدخول <img src="icones/account.png"
+                            alt=""></a>
+                    <p class="not_connevt">! يجب الاتصال بحساب للتمكن من النشر في المنصة </p>
+                </div>
+            </div>
+
+        </div>
+        <form action="" id="form_news" enctype="multipart/form-data">
+
+            <div class="cntCompoent">
+                <p class="remarq">لمحة عن موضوع الخبر الذي تود مشاركته </p>
+                <textarea name="inp_title_news" id="inp_title_news" dir="rtl" placeholder="العنوان ...."></textarea>
+            </div>
+            <div class="cntCompoentd">
+                <p class="remarq">مشاركة بعض الصور لتوضيح الخبر </p>
+                <p class="note">ملاحظة ، يجب إختيار الصورة الرئيسية للخبر أولا <img src="../MEDIA/warning.png" alt="">
+                </p>
+                <input type="file" style="display: none;" name="inp_add_imge" accept="image/*" id="inp_add_imge"
+                    placeholder="">
+                <div class="cntIMGS">
+                    <div class="cnt_img">
+                        <img class="main_img" src="" alt="">
+                        <button class="btn_rmimg" type="button"><img src="../MEDIA/trash.png" alt=""></button>
+                    </div>
+
+                </div>
+                <label for="inp_add_imge" class="labl_uplaoadIMG"><img src="../MEDIA/image-.png" alt="">تحميل صور
+                </label>
+            </div>
+            <div class="cntCompoent">
+                <label for="newsThemes" class="lbl_news_themes">اختر موضوع الأخبار</label>
+                <select id="newsThemes">
+                    <option value="السياسة">السياسة</option>
+                    <option value="الأعمال والاقتصاد">الأعمال والاقتصاد</option>
+                    <option value="التكنولوجيا">التكنولوجيا</option>
+                    <option value="العلوم والصحة">العلوم والصحة</option>
+                    <option value="الرياضة">الرياضة</option>
+                    <option value="الترفيه">الترفيه</option>
+                    <option value="نمط الحياة">نمط الحياة</option>
+                    <option value="الأخبار العالمية">الأخبار العالمية</option>
+                    <option value="التعليم">التعليم</option>
+                    <option value="البيئة">البيئة</option>
+                    <option value="الجريمة والعدالة">الجريمة والعدالة</option>
+                    <option value="الآراء والمقالات الافتتاحية">الآراء والمقالات الافتتاحية</option>
+                    <option value="الأخبار المحلية">الأخبار المحلية</option>
+                </select>
+            </div>
+            <div class="cntCompoent">
+                <p class="remarq">موضوع الخبر </p>
+                <textarea name="inp_news_content" id="inp_news_content" dir="rtl" placeholder="الموضوع ...."></textarea>
+            </div>
+
+        </form>
+        <button id="btn_submit">ارسال</button>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src="./js/shreNews.js"></script>
+</body>
+
+</html>

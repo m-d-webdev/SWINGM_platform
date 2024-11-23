@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+    font-size: 14px !important;
+}
+
+.spraye {
+    /* width: 100%; */
+    width: auto;
+    min-width: 550px;
+    padding: 20px 20px 10px 20px;
+    margin-top: 15px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.096));
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+}
+
+.title_sprayer {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px !important;
+    /* color: #fff; */
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    background-color: #0099ff45;
+}
+
+.btn_get_sprayer2 img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.btn_get_sprayer2 {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.342);
+    color: black;
+    text-decoration: none;
+}
+
+.btn_get_sprayer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: #000000;
+    padding: 6px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn_get_sprayer img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.ineraction {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cnt_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cnt_img {
+    width: 40px;
+    margin-left: 10px;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.fullNameUser:hover::before {
+    width: 100%;
+    opacity: 1;
+
+}
+
+.fullNameUser::before {
+    content: ' ';
+    border-bottom: solid 1px black;
+    position: absolute;
+    width: 0%;
+    opacity: 0;
+    transition: .2s;
+    bottom: 0;
+}
+
+.fullNameUser {
+    border-bottom: solid 1px rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+
+}
+
+.T {
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    flex-direction: column;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.096));
+    margin-top: 0px;
+    display: none;
+
+}
+
+.cntContentLesson {
+    width: 100%;
+    /* max-height: 500px; */
+    overflow: auto;
+
+}
+
+.vedio-tutorial {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.descrVideo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    flex-direction: column;
+    width: 100%;
+}
+
+.titleLesson {
+    font-size: 20px;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+
+}
+
+.interactioVideo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+.L {
+    padding: 10px;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 15px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.096));
+    flex-direction: column;
+    display: none;
+
+}
+
+.cntContentLessonL {
+    /* margin-top: 15px; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.cntButtonREGLE button img {
+    width: 15px;
+    max-height: 100%;
+    margin: 0;
+}
+
+.cntButtonREGLE button {
+    background-color: #ffffff;
+    border: solid 1px rgba(0, 0, 0, 0.462);
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    margin-left: 6px;
+}
+
+.cntButtonREGLE:hover {
+    opacity: 1;
+}
+
+.cntButtonREGLE {
+    position: absolute;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -20px;
+    opacity: 0;
+}
+
+.bigTile p:hover~.cntButtonREGLE {
+    opacity: 1;
+}
+
+.bigTile p {
+    font-size: 18px;
+    font-family: "Cairo", sans-serif;
+    color: red;
+}
+
+.bigTile img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+.bigTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    display: none;
+
+}
+
+.secondTile p:hover~.cntButtonREGLE {
+    opacity: 1;
+}
+
+.secondTile p {
+    font-size: 15px;
+    font-family: "Cairo", sans-serif;
+    color: rgb(2, 194, 6);
+}
+
+.secondTile img {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.secondTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    display: none;
+    position: relative;
+    margin-top: 12px;
+
+}
+
+.thirdTile p:hover~.cntButtonREGLE {
+    opacity: 1;
+}
+
+.thirdTile p {
+    font-size: 14px;
+    font-family: "Cairo", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.thirdTile img {
+    width: 16px;
+    margin-left: 10px;
+}
+
+.thirdTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    display: none;
+    position: relative;
+    margin-top: 13px;
+}
+
+.textLesson p:hover~.cntButtonREGLE {
+    opacity: 1;
+}
+
+.textLesson p {
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+}
+
+.textLesson {
+    /* width: 100%; */
+    display: none;
+    position: relative;
+    margin-top: 15px;
+}
+
+/*  */
+.lessonAsPDF {
+    width: auto;
+    min-width: 550px;
+    padding: 20px 20px 10px 20px;
+    margin-top: 15px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.096));
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: none;
+    position: relative;
+}
+
+.linkPDF_lesson img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.linkPDF_lesson {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid 1px rgba(0, 0, 0, 0.345);
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.linkPDF_lesson2 img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.linkPDF_lesson2 {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .spraye {
+        /* width: 100%; */
+        width: 95%;
+        min-width: 0;
+        padding: 20px 20px 10px 20px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .title_sprayer {
+        padding: 10px;
+        font-size: 13px !important;
+    }
+
+    .btn_get_sprayer2 {
+        width: 100%;
+        margin-top: 30px;
+        background-color: #ffffff;
+        padding: 3px;
+        border-radius: 10px;
+        border: solid 1px rgba(0, 0, 0, 0.342);
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn_get_sprayer {
+        width: 100%;
+        margin-top: 10px;
+        background-color: #000000;
+        padding: 3px;
+        border-radius: 10px;
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    .btn_get_sprayer2 img {
+        width: 17px;
+        margin-right: 10px;
+    }
+
+    .btn_get_sprayer img {
+        width: 17px;
+        margin-right: 10px;
+    }
+
+
+    .T {
+        padding: 5px;
+        width: 100%;
+        margin-top: 0px;
+        display: none;
+
+    }
+
+    .cntContentLesson {
+        width: 100%;
+        /* max-height: 500px; */
+        overflow: auto;
+
+    }
+
+    .vedio-tutorial {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .titleLesson {
+        font-size: 13px !important;
+        font-family: "Cairo", sans-serif;
+        text-align: center;
+
+    }
+
+    .interactioVideo {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 10px;
+        padding: 3px;
+    }
+
+    .L {
+        padding: 10px;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        flex-direction: column;
+        display: none;
+
+    }
+
+    .cntContentLessonL {
+        /* margin-top: 15px; */
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 3px;
+    }
+
+    .bigTile p {
+        font-size: 10px !important;
+        font-family: "Cairo", sans-serif;
+        color: red;
+        max-width: none;
+    }
+
+    .bigTile img {
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    .bigTile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        position: relative;
+        max-width: none;
+        margin-right: 0;
+        display: none;
+
+    }
+
+    .secondTile p:hover~.cntButtonREGLE {
+        opacity: 1;
+    }
+
+    .secondTile p {
+        font-size: 9.5px !important;
+        font-family: "Cairo", sans-serif;
+        color: rgb(2, 194, 6);
+        max-width: none;
+    }
+
+    .secondTile img {
+        width: 15px;
+        margin-left: 5px;
+    }
+
+    .secondTile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        display: none;
+        max-width: none;
+        position: relative;
+        margin-top: 8px;
+
+    }
+
+    .thirdTile p:hover~.cntButtonREGLE {
+        opacity: 1;
+    }
+
+    .thirdTile p {
+        font-size: 9px !important;
+        font-family: "Cairo", sans-serif;
+        color: rgb(0, 0, 0);
+        max-width: none;
+    }
+
+    .thirdTile img {
+        width: 13px;
+        margin-left: 5px;
+    }
+
+    .thirdTile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15x;
+        display: none;
+        max-width: none;
+        position: relative;
+        margin-top: 5px;
+    }
+
+
+    .textLesson p {
+        font-family: "Cairo", sans-serif;
+        font-size: 10px !important;
+    }
+
+    .textLesson {
+        /* width: 100%; */
+        display: none;
+        position: relative;
+        max-width: none;
+        margin-top: 14px;
+    }
+
+    /*  */
+    .lessonAsPDF {
+        width: 95%;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding: 8px;
+        max-width: none;
+        margin: 10px 5px;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .linkPDF_lesson img {
+        width: 17px;
+        margin-right: 10px;
+    }
+
+    .linkPDF_lesson {
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 20px;
+        border: solid 1px rgba(0, 0, 0, 0.345);
+        padding:3px;
+        text-decoration: none;
+        color: #000000;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+
+    .linkPDF_lesson2 img {
+        width: 17px;
+        margin-right: 10px;
+    }
+
+    .linkPDF_lesson2 {
+        width: 100%;
+        background-color: #000000;
+        border-radius: 10px;
+        padding: 3px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 15px;
+    }
+
+    .s-X3z-V4rB-H8tQ {
+        display: flex;
+    }
+
+}
+
+.s-X3z-V4rB-H8tQ {
+    display: flex;
+}

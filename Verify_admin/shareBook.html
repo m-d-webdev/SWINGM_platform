@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../ResearcherSpace/css/Articles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=".././MAINCSS/anmateDone.css" />
+    <link rel="stylesheet" href="css/shareBokk.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body dir="rtl">
+    <main class="mainPage">
+      <div class="bare_page">
+        <div class="cnt_info_user">
+          <div class="user_info">
+            <div class="cnt_prof_pic">
+              <img src="" alt="" />
+            </div>
+            <p class="full_name2"></p>
+          </div>
+          <div class="cnt_matr_connect">
+            <a href="page_sign_in.html" id="btn_connect_ac"
+              >انشاء حساب جديد <img src="icones/add-user.png" alt=""
+            /></a>
+            <a href="page_login.html" id="btn_connect_ac2"
+              >تسجيل الدخول <img src="icones/account.png" alt=""
+            /></a>
+            <p class="not_connevt">
+              ! يجب الاتصال بحساب للتمكن من النشر في المنصة
+            </p>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="icones/logo_rem.png" alt="" />
+        </div>
+      </div>
+      <p class="titlePage">
+        هذه الصفحة مخصصة لاكتشاف الكتب ومشاركتها مع الآخرين. يمكنك ملء النموذج
+        أدناه لمشاركة كتاب مع الجمهور
+      </p>
+      <div class="containerELEMENTS">
+        <p class="titleCompage">معلومات الكتاب </p>
+        <div class="inputsElements">
+          <div class="compINP">
+            <p class="descCOMP">
+              هذا الحقل لكتابة اسم الكتاب الذي ترغب في مشاركته
+            </p>
+            <input type="text" placeholder="" id="book_name" />
+            <label for="book_name" class="lbl_COMP">اسم الكتاب </label>
+          </div>
+          <div class="compINP">
+            <p class="descCOMP">هذا الحقل لذكر تاريخ النشر للكتاب</p>
+            <input type="text" placeholder="" id="book_date_publish" />
+            <label for="book_date_publish" class="lbl_COMP">تاريخ النشر </label>
+          </div>
+          <div class="compINP">
+            <p class="descCOMP">
+              حدد نوع الكتاب، مثل رواية، كتاب تعليمي، كتاب غير روائي، إلخ
+            </p>
+            <select name="bookType" id="book_type" class="seelcChp">
+              <option value=""></option>
+              <option value="الخيال">الخيال</option>
+              <option value="الواقعية">الواقعية</option>
+              <option value="الفانتازيا">الفانتازيا</option>
+              <option value="الخيال العلمي">الخيال العلمي</option>
+              <option value="الغموض">الغموض</option>
+              <option value="الرومانسية">الرومانسية</option>
+              <option value="الإثارة">الإثارة</option>
+              <option value="كتب الأطفال">كتب الأطفال</option>
+              <option value="الشباب">الشباب</option>
+              <option value="الروايات المصورة">الروايات المصورة</option>
+            </select>
+            <label for="book_type" class="lbl_COMPSP"> نوع الكتاب</label>
+          </div>
+
+          <div class="compINP">
+            <p class="descCOMP">
+              حدد لغة الكتاب، مثل العربية، الإنجليزية، الفرنسية، إلخ
+            </p>
+            <select id="language" name="language" class="seelcChp">
+              <option value=""></option>
+              <option value="العربية">العربية</option>
+              <option value="الإنجليزية">English</option>
+              <option value="الأمازيغية">ⵜⴰⵎⴰⵣⵉⵖⵜ (Tamazight)</option>
+              <option value="الفرنسية">Français (French)</option>
+            </select>
+            <label for="language" class="lbl_COMPSP"> لغة الكتاب:</label>
+          </div>
+          <div class="compINP">
+            <textarea name="" id="book_description" placeholder="وصف الكتاب..."  dir="rtl"></textarea>
+          </div>
+        </div>
+        <div class="cntPrfBok">
+          <div class="cntIMG">
+            <img src="" alt="" />
+          </div>
+          <form
+            action=""
+            id="form1"
+            enctype="multipart/form-data"
+            style="display: none"
+          >
+            <input type="file" id="inp_img" accept="image/*" required />
+            <input
+              type="file"
+              id="inp_bookPDF"
+              accept="application/pdf"
+              required
+            />
+          </form>
+
+          <button class="btn_uploadOPRFOL_book">تحميل الغلاف</button>
+          <div class="cnt_uploadBook">
+            <p class="titleINPUTSs">pdf تحميل الكتاب على شكل ملف</p>
+            <button id="btn_uploadBOOKPDEF">
+              <img src="../MEDIA/upload.png" alt="" />تحميل الكتاب
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="writerInfo">
+        <p class="titleCompage">معلومات الكاتب  </p>
+        <div class="cntWriterInfo">
+          <input type="text" placeholder="" id="book_writer" />
+          <label for="book_writer" class="lbl_COMP">اسم الكاتب</label>
+        </div>
+        <div class="DivwriterImg">
+          <p class="titleWriterImg">صورة الكاتب</p>
+          <input type="file" style="display: none;" id="inp_imgWriter" accept="image/*">
+           <label class="getImgWriter" for="inp_imgWriter">تحميل من الجهاز </label>
+          <a class="getImgWriter" id="btnSerchAuthor"  target="_blank">بحث</a>
+          <div class="cntImgWriter"><img src="./icones/AuthorPic.jpg" alt=""></div>
+        </div>
+        <div class="cntWriterdefin">
+          <label for="bookWriterInfo">التعريف بالكاتب </label>
+          <textarea name="bookWriterInfo" id="bookWriterInfo"></textarea>
+        </div>
+      </div>
+    </main>
+    <button id="btnSendBook">نشر</button>
+  </main>
+  <div class="shadowDIV d_c">
+    <div class="PUP_UPASK_YES_NO animate__animated animate__rubberBand">
+      <img
+        src=".././MEDIA/checkmark.png"
+        id=""
+        alt=""
+        class="IconeMessageSuccess animate__animated animate__bounceInDown"
+      />
+      <img
+        src=".././MEDIA/attention.png"
+        id=""
+        alt=""
+        class="IconeMessageNotice animate__animated animate__flash"
+      />
+      <img
+        src=".././MEDIA/rejected.png"
+        id=""
+        alt=""
+        class="IconeMessageError animate__animated animate__wobble"
+      />
+      <p class="MessgaeText"></p>
+      <div class="cnt_btns d_c">
+        <button id="btn_accept">نعم</button>
+        <button id="btn_refuse">تراجع</button>
+      </div>
+    </div>
+  </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src=".././MAINJS/anmateDone.js"></script>
+     <script src="./js/shareBook.js"></script>
+  </body>
+</html>

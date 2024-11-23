@@ -1,0 +1,1128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", serif;
+  font-size: 14px !important;
+}
+
+.mainStudentSpace {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  position: relative;
+  padding: 5px;
+  background-color: #eff4ff;
+}
+
+.bare_menu2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.logo2 img {
+  height: 70px;
+}
+.cntButnSwichLessond{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  /* width: 40%; */
+}
+
+.btnSchoolLevles p{
+  font-size: 13px !important;
+}
+.btnSchoolLevles img {
+  width: 25px;
+  margin-left: 15px;
+}
+
+.btnSchoolLevles {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  min-width: 100px;
+  margin-left: 15px;
+  cursor: pointer;
+  align-items: center;
+}
+.SELECTED_LESSON p{
+  font-size: 13px !important;
+}
+.SELECTED_LESSON{
+  background-color: #0c75ff;
+  color: #fff;  
+  padding: 5px 12px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+}
+/*  */
+.bareSearch input {
+  width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.38);
+  border-radius: 15px;
+  outline: none;
+  padding: 4px 9px;
+}
+
+.bareSearch img {
+  margin-right: 15px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  padding: 6px;
+}
+
+.bareSearch {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.cntReasuSearch p:hover {
+  background-color: #eff4ff;
+}
+
+.cntReasuSearch p {
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cntReasuSearch {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.231));
+  flex-direction: column;
+  display: none;
+}
+
+/* LESSOM ACACD-*********************************************************************** */
+
+.listLessons:hover {
+  padding-left: 5px;
+  filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.135));
+  opacity: 1;
+}
+
+.listLessons {
+  width: 0;
+  height: 700px;
+
+  padding: 5px;
+  background-color: #000308;
+  border-radius: 5px ;
+}
+.activeListLessons {
+  width: 300px;
+  min-width: 300px;
+  overflow-x: hidden;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.07));
+  align-items: center;
+  padding: 5px;
+  background-color: #000308;
+  border-radius: 5px ;
+  animation:asddWidth .3s alternate;
+}
+
+@keyframes asddWidth {
+  0%{
+    width: 0;
+    min-width: 0;
+  }
+}
+.disactiveListLessons {
+  width: 0px;
+  min-width: 0px;
+  overflow-x: hidden;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.07));
+  align-items: center;
+  padding: 5px;
+  background-color: #000308;
+  border-radius: 5px ;
+  animation:asddWidth2 .3s alternate;
+}
+
+@keyframes asddWidth2 {
+  0%{
+    width: 300px;
+    min-width: 300px;
+  }
+}
+
+
+.lessonName:hover::after{
+  width: 100%;
+}
+
+.lessonName::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  right: 0;
+  transition: 0.2s;
+  width: 1%;
+  top: 0;
+  z-index: 1;
+  background-color: #0c75ff;
+  border-radius: 10px 0 0 10px;
+}
+
+.lessonName span {
+  font-size: 12px;
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
+.lessonName {
+  display: none;
+}
+
+.activeListLessons .lessonName {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  padding-right: 13px;
+  margin-top: 10px;
+  color: #fff;
+  border: solid 1px rgba(0, 0, 0, 0.205);
+  border-radius: 10px 0 0 10px;
+  cursor: pointer;
+}
+
+.lessonName:hover {
+  color: #fff;
+}
+
+.lessonName:hover span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.lessonName p {
+  color: #fff;
+}
+.lessonName:hover p {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.containerLesson {
+  width: 100%;
+  min-height: 800px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* *---------------------------------
+*/
+
+.T {
+  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.231));
+  background-color: #ffffff;
+  flex-direction: column;
+  margin-top: 15px;
+  display: none;
+}
+
+.cntContentLesson {
+  width: 100%;
+  /* max-height: 500px; */
+  overflow: hidden;
+}
+
+.vedio-tutorial {
+  /* margin-top: 15px; */
+  width: 100%;
+}
+
+.descrVideo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+/*  */
+
+.titleLesson {
+  font-size: 18px !important;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.L {
+  padding: 10px;
+  filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.231));
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 15px;
+  border-radius: 10px;
+  flex-direction: column;
+  display: none;
+}
+
+.cntContentLessonL {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3px;
+}
+
+.cntButtonREGLE button img {
+  width: 15px;
+  max-height: 100%;
+  margin: 0;
+}
+
+.cntButtonREGLE button {
+  background-color: #ffffff;
+  border: solid 1px rgba(0, 0, 0, 0.462);
+  width: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  margin-left: 6px;
+}
+
+.cntButtonREGLE:hover {
+  opacity: 1;
+}
+
+.cntButtonREGLE {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -20px;
+  opacity: 0;
+}
+
+.bigTile p:hover~.cntButtonREGLE {
+  opacity: 1;
+}
+
+.bigTile p {
+  font-size: 18px;
+  font-family: "Cairo", sans-serif;
+  color: red;
+}
+
+.bigTile img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.bigTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  max-width: 95%;
+
+  display: none;
+}
+
+.secondTile p:hover~.cntButtonREGLE {
+  opacity: 1;
+}
+
+.secondTile p {
+  font-size: 15px;
+  font-family: "Cairo", sans-serif;
+  color: rgb(2, 194, 6);
+}
+
+.secondTile img {
+  width: 18px;
+  margin-left: 10px;
+}
+
+.secondTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  display: none;
+  max-width: 95%;
+  position: relative;
+  margin-top: 8px;
+}
+
+.thirdTile p:hover~.cntButtonREGLE {
+  opacity: 1;
+}
+
+.thirdTile p {
+  font-size: 14px;
+  font-family: "Cairo", sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.thirdTile img {
+  width: 16px;
+  margin-left: 10px;
+}
+
+.thirdTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  display: none;
+  max-width: 95%;
+  position: relative;
+  margin-top: 12px;
+}
+
+.textLesson p:hover~.cntButtonREGLE {
+  opacity: 1;
+}
+
+.textLesson p {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+}
+
+.textLesson {
+  /* width: 100%; */
+  display: none;
+  position: relative;
+  max-width: 95%;
+  margin-top: 15px;
+}
+
+/*  */
+.lessonAsPDF {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  align-items: start;
+  padding: 15px;
+  max-width: 600px;
+  margin: 10px 5px;
+  margin-top: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0px 5px rgba(0, 0, 0, 0.231));
+  display: none;
+}
+
+.linkPDF_lesson img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.linkPDF_lesson {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  border: solid 1px rgba(0, 0, 0, 0.281);
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-top: 35px;
+}
+
+.linkPDF_lesson2 img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.linkPDF_lesson2 {
+  width: 100%;
+  background-color: #000102;
+  border-radius: 20px;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.shadow button p {
+  font-size: 20px;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.824);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+  display: none;
+}
+
+.cntBTNSLEVEL {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.cntBTNSLEVEL button:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.996));
+  color: #000000;
+  background-color: #fff;
+}
+
+.cntBTNSLEVEL button {
+  height: 70px;
+  width: 100%;
+  margin-top: 15px;
+  /* max-width: 500px; */
+  border: none;
+  color: #fff;
+
+  transition: 0.2s;
+  border-radius: 10px;
+  background-color: #000000;
+  /* filter: drop-shadow(0 0 20px #15ff9676); */
+}
+
+/* -------------- */
+
+.welcomingDev h1 {
+  font-size: 22px;
+}
+
+.welcomingDev p {
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.welcomingDev {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f4f6f7;
+  /* height: 800px; */
+  margin-top: 50px;
+  width: 100%;
+  /* display: none; */
+}
+
+.cntSVG svg {
+  width: 100%;
+}
+
+.cntSVG {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.bntOpenList {
+  display: none;
+}
+
+
+.licNV_schol {
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  position: absolute;
+  top: -8px;
+  z-index: 3;
+  background-color: #000000;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-duration: .3s;
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.122));
+  /* display: none; */
+}
+
+.AnimatioEle {
+  animation: animationFromTop .2s alternate;
+    width: 300px;
+    height: 220px;
+}
+
+@keyframes animationFromTop {
+  0% {
+    height: 0px;
+    width: 0;
+  }
+
+  100% {
+    height: 220px;
+    width: 300px;
+  }
+}
+.AnimatioEle1{
+  width: 0px;
+  animation: animationFromTop2 .2s alternate;
+}
+
+@keyframes animationFromTop2 {
+  0% {
+    height: 220px;
+    width: 300px;
+  }
+
+  100% {
+    height: 0px;
+    width: 0px;
+  }
+}
+
+.btnNV_SHCOOL:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.btnNV_SHCOOL:hover {
+  color: #fff;
+}
+
+.btnNV_SHCOOL::before {
+  height: 100%;
+  content: "";
+  position: absolute;
+  width: 2%;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #0c75ff;
+  transition: 0.2s;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  /* left: 45%; */
+}
+
+.btnNV_SHCOOL p {
+  z-index: 4;
+  position: relative;
+  font-size: 13px !important;
+}
+
+.licNV_schol .btnNV_SHCOOL {
+  display: none;
+}
+
+.AnimatioEle .btnNV_SHCOOL {
+  width: 100%;
+  animation: addvirsdf .3s alternate;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  position: relative;
+  color: #fff;
+  justify-content: center;
+  align-content: center;
+    visibility: visible;
+    cursor: pointer;
+  padding-right: 10px;
+}
+
+@keyframes addvirsdf {
+  0% {
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+  }
+
+}
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 10px !important;
+  }
+
+
+  .bare_menu2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    padding:  5px;
+  }
+
+  .logo2 img {
+    height: 50px;
+  }
+
+  .logo2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .cntButnSwichLessond{
+    display: flex;
+    justify-content:flex-start
+    ;
+    flex-wrap: wrap;
+    align-items: center;
+    /* width: 40%; */
+    max-width: 90%;
+    margin-bottom: 5px;
+  }
+  
+  .btnSchoolLevles p{
+    font-size: 9px !important;
+  }
+  .btnSchoolLevles img {
+    width: 18px;
+    margin-left: 10px;
+  }
+  
+  .btnSchoolLevles {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 20px;
+    min-width: 0;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .SELECTED_LESSON p{
+    font-size: 9px !important;
+  }
+  .SELECTED_LESSON{
+    padding: 2px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* ------------------------ */
+  .bareSearch input {
+    width: 70%;
+  }
+
+  .bareSearch img {
+    width: 20px;
+    padding: 3px;
+  }
+
+  .bareSearch {
+    width: 100%;
+    max-width: none;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .cntReasuSearch p {
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .cntReasuSearch {
+    top: 30px;
+    width: 90%;
+    padding: 4px;
+    z-index: 4;
+    display: none;
+  }
+
+  /* LESSOM ACACD-*********************************************************************** */
+  
+.licNV_schol {
+  border-radius: 5px;
+  padding: 3px;
+  right: 0px;
+  /* display: none; */
+}
+
+
+  .AnimatioEle {
+    animation: animationFromTop .2s alternate;
+      width: 200px;
+      height: 220px;
+  }
+  
+  @keyframes animationFromTop {
+    0% {
+      height: 0px;
+      width: 0;
+    }
+  
+    100% {
+      height: 220px;
+      width: 200px;
+    }
+  }
+  .AnimatioEle1{
+    width: 0px;
+    animation: animationFromTop2 .1s alternate;
+  }
+  
+  @keyframes animationFromTop2 {
+    0% {
+      height: 220px;
+      width: 200px;
+    }
+  
+    100% {
+      height: 0px;
+      width: 0px;
+    }
+  }
+  
+  .btnNV_SHCOOL:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .btnNV_SHCOOL:hover {
+    color: #fff;
+  }
+  
+  .btnNV_SHCOOL::before {
+    height: 100%;
+    content: "";
+    position: absolute;
+    width: 2%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #0c75ff;
+    transition: 0.2s;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    /* left: 45%; */
+  }
+  
+  .btnNV_SHCOOL p {
+    font-size: 9px !important;
+  }
+  
+  .licNV_schol .btnNV_SHCOOL {
+    display: none;
+  }
+  
+  .AnimatioEle .btnNV_SHCOOL {
+    width: 100%;
+    animation: addvirsdf .3s alternate;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    position: relative;
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+      visibility: visible;
+      cursor: pointer;
+    padding-right: 10px;
+  }
+  
+
+
+  .listLessons {
+    width: 0;
+    /* width: 30px; */
+    overflow-x: hidden;
+    height: 600px;
+    filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.301));
+    padding: 2px;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    z-index: 3;
+  }
+
+  .activeListLessons {
+    width: 200px;
+    min-width: 200px;
+    overflow-x: hidden;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.07));
+    visibility: visible;
+    align-items: center;
+    padding: 5px;
+    background-color: #000308;
+    border-radius: 5px ;
+    animation:none;
+  }
+  
+  @keyframes asddWidth {
+    0%{
+      width: 0;
+      min-width: 0;
+    }
+  }
+  .disactiveListLessons {
+    width: 0px;
+    min-width: 0px;
+    overflow-x: hidden;
+    transition: 0.2s;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    filter: drop-shadow(-5px 0 3px rgba(0, 0, 0, 0.07));
+    align-items: center;
+    padding: 3px;
+    background-color: #000308;
+    border-radius: 5px ;
+    animation:asddWidth2 .3s alternate;
+  }
+  
+  @keyframes asddWidth2 {
+    0%{
+      width: 200px;
+      min-width: 200px;
+    }
+  }
+  
+
+
+  .lessonName span {
+    font-size: 8px;
+    margin-right: 5px;
+    transition: 0;
+  }
+
+  .lessonName::after {
+    display: none;
+  }
+
+  .lessonName {
+    position: relative;
+    width: 100%;
+    min-width: 150px;
+    padding: 4px;
+    opacity: 1;
+    transition: 0;
+    padding-right: 10px;
+    margin-top: 6px;
+    animation: none;
+  }
+
+
+  .containerLesson {
+    margin-right: 5px;
+    width: 99%;
+  }
+
+  /* *---------------------------------
+  */
+
+  .T {
+    padding: 5px;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f6f7;
+    flex-direction: column;
+    margin-top: 15px;
+    display: none;
+  }
+
+  .descrVideo {
+    margin-top: 5px;
+  }
+
+  .titleLesson {
+    font-size: 14px !important;
+    font-family: "Cairo", sans-serif;
+  }
+
+  /*  */
+
+  .L {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+
+
+
+  .bigTile p {
+    font-size: 10px !important;
+    font-family: "Cairo", sans-serif;
+    color: red;
+    max-width: none;
+  }
+
+  .bigTile img {
+    width: 17px;
+    margin-left: 6px;
+  }
+
+
+
+  .secondTile p {
+    font-size: 9px !important;
+    font-family: "Cairo", sans-serif;
+    color: rgb(2, 194, 6);
+    max-width: none;
+  }
+
+  .secondTile img {
+    width: 13px;
+    margin-left: 6px;
+  }
+
+  .secondTile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    display: none;
+    max-width: none;
+    margin-top: 6px;
+  }
+
+
+
+  .thirdTile p {
+    font-size: 8px !important;
+    font-family: "Cairo", sans-serif;
+    color: rgb(0, 0, 0);
+    max-width: none;
+  }
+
+  .thirdTile img {
+    width: 14px;
+    margin-left: 6px;
+  }
+
+  .thirdTile {
+    margin-right: 15px;
+  }
+
+
+
+  .textLesson p:hover~.cntButtonREGLE {
+    opacity: 1;
+  }
+
+  .textLesson p {
+    font-size: 9px !important;
+  }
+
+  .shadow button p {
+    font-size: 20px;
+  }
+
+
+  .cntBTNSLEVEL button {
+    height: 50px;
+    width: 100%;
+    /* filter: drop-shadow(0 0 20px #15ff9676); */
+  }
+
+  /* -------------- */
+
+  .welcomingDev h1 {
+    font-size: 22px;
+  }
+
+  .welcomingDev p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .welcomingDev {
+    margin-top: 60px;
+    width: 100%;
+    /* display: none; */
+  }
+
+  .cntSVG {
+    margin-top: 0;
+    max-width: 300px;
+  }
+}
+
+.s-X3z-V4rB-H8tQ {
+  display: flex;
+}

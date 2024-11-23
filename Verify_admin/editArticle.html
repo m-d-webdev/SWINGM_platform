@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/editArticles.css">
+</head>
+
+<body dir="rtl">
+    <div class="ptitlePage">
+        <button onclick="window.history.back()">
+            <img src="icones/left.png" class="imgBNtrowLeft" alt="">
+            <p>عودة </p>
+        </button>
+        <h1>صفحة تعديل المقالات </h1>
+    </div>
+
+    <div class="container">
+        <div class="bareSearch">
+            <input type="text" placeholder="  عنوان المقالة  " autocomplete="off" id="inpSearch">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+            <div class="cntResults">
+            </div>
+        </div>
+
+        <div class="cntArticle">
+            <div class="ctInputTitleArticle">
+                <label for="inpTitleArticle">عنوان المقالة </label>
+                <input type="text" placeholder="" name="title" autocomplete="off" id="inpTitleArticle">
+                <button class="btnSave">حفظ </button>
+            </div>
+            <div class="ctInputTitleArticle">
+                <label for="type_articl">نوعية المقالة </label>
+                <select name="article_type" id="type_articl">
+                    <option value=""></option>
+                    <option value="مقالة تحليلية">مقالة تحليلية</option>
+                    <option value="مقالة تقريرية">مقالة تقريرية</option>
+                    <option value="مقالة تعليمية">مقالة تعليمية</option>
+                    <option value="مقالة رأي">مقالة رأي</option>
+                    <option value="مقالة علمية">مقالة علمية</option>
+                    <option value="مقالة سردية">مقالة سردية</option>
+                    <option value="مقالة تحقيقية">مقالة تحقيقية</option>
+                    <option value="مقالة ترفيهية">مقالة ترفيهية</option>
+                </select>
+                <button class="btnSave">حفظ </button>
+            </div>
+
+            <div class="ctInputTitleArticle">
+                <label for="article_text">عنوان المقالة </label>
+                <textarea name="article_text" id="article_text"></textarea>
+                <button class="btnSave">حفظ </button>
+            </div>
+            <button id="btnDelete">إزالة </button>
+        </div>
+    </div>
+    <script src="../MAINJS/anmateDone.js"></script>
+    <script src="./js/editArticle.js"></script>
+</body>
+</html>

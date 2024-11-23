@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="MAINCSS/signin.css">
+
+</head>
+
+
+<body>
+    <main class="main_signin">
+
+        <form action="" id="form_signin">
+            <p class="title_for">إنشاء حساب جديد </p>
+            <!-- <button id="btn_canc_signin" type="button"><img src="icones/cn1.png" alt=""></button> -->
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="text" id="first_name" name="first_name" placeholder="">
+                    <label for="first_name" class="lbl_signin">الأسم الأول</label>
+                </div>
+                <img class="IconDes" src="MEDIA/id-card.png" alt="">
+            </div>
+
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="text" id="last_name" name="last_name" placeholder="">
+                    <label for="last_name" class="lbl_signin">الأسم الأخير</label>
+                </div>
+                <img class="IconDes" src="MEDIA/id-card.png" alt="">
+            </div>
+
+            <div class="dv_info">
+                <div class="cntInp">
+                    <select name="job" id="job">
+                        <option value="أستاذ">أستاذ</option>
+                        <option value="طالب">طالب</option>
+                        <option value="تلميذ">تلميذ </option>
+                        <option value="باحث">باحث</option>
+                        <option value="أخر">آخر</option>
+                    </select>
+                    <label for="job" class="lbl_sel_jo">الصفة</label>
+                </div>
+                <img src="MEDIA/employee.png" class="IconDes" alt="">
+            </div>
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="text" class="" id="inp_phone" name="num_phone" placeholder="">
+                    <label for="inp_phone" class="lbl_signin">رقم الهاتف </label>
+                </div>
+                <img src="MEDIA/phone-receiver-silhouette.png" class="IconDes" alt="">
+            </div>
+
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="email" class="" id="inp_email2" name="email" placeholder="">
+                    <label for="inp_email2" class="lbl_signin"> E-mail </label>
+                </div>
+                <img class="IconDes" src="MEDIA/address.png" alt="">
+            </div>
+            <p class="errorP">!عنوان البريد الإلكتروني هذا  يستعمله شخص آخر </p>
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="text" id="inp_pass2" name="pass" placeholder="">
+                    <label for="inp_pass2" class="lbl_signin">أنشئ كلمة المرور </label>
+                </div>
+                <img src="MEDIA/padlock.png" class="IconDes" alt="">
+                <P class="show_pass2"></P>
+            </div>
+            <div class="dv_info">
+                <div class="cntInp">
+                    <input type="text" id="inp_pass2_conf" name="inp_pass2_conf" placeholder="">
+                    <label for="inp_pass2_conf" class="lbl_signin">تاكيد كلمة المرور </label>
+                </div>
+                <p class="err_conf_pas"></p>
+                <img src="ResearcherSpace/icones/checkmark.png" class="checked_img" alt="">
+                <P class="show_pass2"></P>
+                <img src="MEDIA/padlock.png" class="IconDes" alt="">
+            </div>
+            <button type="button" id="btn_next_signin">التالي </button>
+        </form>
+
+        <div class="cnt_carton">
+            <div class="logo">
+                <img src="ResearcherSpace/icones/logo_rem.png" alt="">
+                <p dir="rtl">مرحبا بك في صحفة إنشاء حساب لدى منصة SWINGM ، يرجى ملاء المعلومات الخاصة بك </p>
+            </div>
+            <img class="ing_" src="MEDIA/und3.png" alt="">
+        </div>
+    </main>
+    <div class="shadowDiv">
+        <div class="cntPopUpConckies">
+            <img src="MEDIA/coockies.png" alt="">
+            <p>نحن نستعمل ملفات تعريف الإرتباط ، هل توافق على ذلك ؟</p>
+            <div>
+                <button id="btn_refuseCoockie">لا </button>
+                <button id="btn_donfrCoockie">أوافق </button>
+            </div>
+        </div>
+    </div>
+    <script src="MAINJS/SING_UP.js"></script>
+</body>
+
+</html>

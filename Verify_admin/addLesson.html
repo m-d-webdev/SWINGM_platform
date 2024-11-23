@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/addLesson.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=".././MAINCSS/anmateDone.css">
+</head>
+
+<body dir="rtl">
+    <div class="naveBare">
+        <div class="cntUserInfo">
+            <div class="cntUserImg">
+                <img src="" alt="">
+            </div>
+            <h1 id="UserName"></h1>
+        </div>
+
+        <h1 class="titlePageNafdafe">
+            الصفحة المخصصة لإضافة وحذف الدروس الخاصة بمشرفي المنصة
+        </h1>
+    </div>
+    <div class="main" dir="rtl">
+        <div class="menuChoose" dir="rtl">
+            <button id="btnSPRSYER">
+                <img src="./icones/document (2).png" alt="">
+                <p>جذاذة </p>
+            </button>
+            <button id="btnWR">
+                <img src="./icones/a.png" alt="">
+                <p>درس مكتوب </p>
+            </button>
+            <button id="btnVideo">
+                <img src="./icones/video-camera copy.png" alt="">
+                <p>درس مصور </p>
+            </button>
+            <button id="btnPDF">
+                <img src="./icones/pdf-file copy.png" alt="">
+                <p>درس PDF</p>
+            </button>
+            <button id="btnExam">
+                <img src="./icones/exam (2).png" alt="">
+                <p>إمتحان </p>
+            </button>
+            <button id="btnGetOuneLesson">
+                <img src="./icones/trash (2).png" alt="">
+                <p>حذف درس</p>
+            </button>
+        </div>
+        <div class="addPDFLESON  animate__animated  cntForm" dir="rtl">
+            <form action="" id="form" enctype="multipart/form-data">
+                <h1 class="titleFORM">إضافة درس على شكل PDF </h1>
+                <div class="cntComponent">
+                    <input type="text" name="nameLessonPDF" id="nameLessonPDF" placeholder="">
+                    <label for="nameLessonPDF" class="kbkINP">اسم الدرس </label>
+                </div>
+                <div class="cntComponentAREA cntChosesed">
+                    <div class="cntVHOSE">
+                        <input type="radio" name="firstAreachooseFPDF" id="firstAreachooseFPDF">
+                        <label for="firstAreachooseFPDF">مجال الجغرافيا</label>
+                    </div>
+                    <div class="cntVHOSE">
+                        <input type="radio" name="firstAreachooseFPDF" id="firstAreachooseFPDF2">
+                        <label for="firstAreachooseFPDF2">مجال التاريخ</label>
+                    </div>
+                </div>
+                <div class="cntComponentYT ">
+                    <label for="lessonlevel" class="">المستوى الدراسي </label>
+                    <select name="lessonlevel" id="lessonlevel">
+                        <option value="">إختر المستوى الدراسي </option>
+                        <option value="lyce1">جذع مشترك </option>
+                        <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                        <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                        <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+                    </select>
+                </div>
+                <div class="cntComponentYT">
+                    <p class="namePdf"></p>
+                </div>
+                <div class="cntComponent">
+                    <label for="PDFLesson" class="kbkINPUPLOAD">
+                        <p>تحميل الدرس </p><img src="./icones/file (2).png" alt="">
+                    </label>
+                    <input type="file" name="PDFLesson" id="PDFLesson" accept=".pdf">
+                    <p class="errorP">المرجو إختيار ملف الدرس </p>
+                </div>
+                <button type="button" id="btnSendPdf" class="btnShare">مشاركة </button>
+            </form>
+        </div>
+        <div class="addVIDEOlesson animate__animated  cntForm" dir="rtl">
+            <form action="" id="formUploadVideo" enctype="multipart/form-data">
+                <h1 class="titleFORM">إضافة درس مصور </h1>
+                <div class="cntComponent">
+                    <input type="text" id="inpNameLessonV" name="inpNameLessonV" placeholder="">
+                    <label for="inpNameLessonV" class="kbkINP">اسم الدرس </label>
+                </div>
+                <div class="cntComponentAREA cntChosesed2">
+                    <div class="cntVHOSE">
+                        <input type="radio" name="lessonarea" id="firstAreachooseVEDIO">
+                        <label for="firstAreachooseVEDIO">مجال الجغرافيا</label>
+                    </div>
+                    <div class="cntVHOSE">
+                        <input type="radio" name="lessonarea" id="firstAreachooseVEDIO2">
+                        <label for="firstAreachooseVEDIO2">مجال التاريخ</label>
+                    </div>
+                </div>
+                <div class="cntComponentYT ">
+                    <label for="lessonlevel" class="">المستوى الدراسي </label>
+                    <select name="lessonlevel" id="lessonlevel">
+                        <option value="">إختر المستوى الدراسي </option>
+                        <option value="lyce1">جذع مشترك </option>
+                        <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                        <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                        <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+                    </select>
+                </div>
+                <video src="" controls class="videoSelected" controlslist="nodownload"></video>
+                <div class="cntComponent">
+                    <input type="file" name="VideoLesson" id="VideoLesson" accept="video/*" placeholder=""
+                        style="display: none;">
+                    <label for="VideoLesson" class="kbkINPSDU">تحميل الفيديو </label>
+                    <p class="errorP">المرجو تحميل الفيديو </p>
+                </div>
+                <button class="btnShare" type="button" id="btnSendVideo">مشاركة </button>
+            </form>
+        </div>
+        <div class="addLessonAsText animate__animated  cntForm" dir="rtl">
+            <form action="" id="formWrtiedLesson" enctype="multipart/form-data">
+                <h1 class="titleFORM">إضافة درس مكتوب </h1>
+                <div class="cntComponent">
+                    <input type="text" name="inpNameLessonTEXT" id="inpNameLesson" placeholder="">
+                    <label for="inpNameLesson" class="kbkINP">اسم الدرس </label>
+                </div>
+                <div class="cntComponentAREA cntChosesed3">
+                    <div class="cntVHOSE ">
+                        <input type="radio" name="lessonarea" id="firstAreachooseTEXT">
+                        <label for="firstAreachooseTEXT">مجال الجغرافيا</label>
+                    </div>
+                    <div class="cntVHOSE">
+                        <input type="radio" name="lessonarea" id="secondAreachooseTEXT">
+                        <label for="secondAreachooseTEXT">مجال التاريخ</label>
+                    </div>
+                </div>
+                <div class="cntComponentYT ">
+                    <label for="lessonlevel" class="">المستوى الدراسي </label>
+                    <select name="lessonlevel" id="lessonlevel">
+                        <option value="">إختر المستوى الدراسي </option>
+                        <option value="lyce1">جذع مشترك </option>
+                        <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                        <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                        <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+                    </select>
+                </div>
+                <div class="cntTexarea">
+                    <div class="containerControlWriting">
+                        <p>إستخدم هذه الرموزلتمييز العناوين ، و محتوى الدرس</p>
+
+                        <div class="explainElem">
+                            <img src="./icones/window.png" alt="">
+                            <p>إستخدم هذا الرمز للإشارة إلى عنوان كبير </p>
+                        </div>
+
+                        <div class="explainElem">
+                            <img src="./icones/upward-arrow.png" alt="">
+
+                            <p>إستخدم هذا الرمز للإشارة إلى فرع العنوان الكبير </p>
+                        </div>
+
+                        <div class="explainElem">
+                            <img src="./icones/down.png" alt="">
+                            <p>إستخدم هذا الرمز للإشارة إلى فرع إلى عناوين الفقرات </p>
+                        </div>
+
+                        <div class="explainElem">
+                            <img src="./icones/align-left.png" alt="">
+                            <p>إستخدم هذا الرمز للإشارة إلى فقرة </p>
+                        </div>
+
+                    </div>
+                    <div class="btnsWrite">
+                        <button type="button" class="btnWrite" id="btnAddGrnadetitle">
+                            <img src="./icones/window.png" alt="">
+                        </button>
+                        <button type="button" class="btnWrite" id="btnAddSecondtitle">
+                            <img src="./icones/upward-arrow.png" alt="">
+                        </button>
+                        <button type="button" class="btnWrite" id="btnAddThirdtitle">
+                            <img src="./icones/down.png" alt="">
+                        </button>
+
+                        <button type="button" class="btnWrite" id="btnAddparagraphe">
+                            <img src="./icones/align-left.png" alt="">
+                        </button>
+                    </div>
+                    <div class="cntINPwriting">
+                        <textarea id="inpPrepareText" placeholder="أكتب هنا ...."></textarea>
+                        <button type="button" class="btnAddText">إضافة إلى النص </button>
+                        <p class="errorP">محتوى الدرس فارغ </p>
+                    </div>
+                    <div class="cnttextLesson"></div>
+                </div>
+                <button type="button" id="btnSendWER" class="btnShare">مشاركة </button>
+            </form>
+        </div>
+        <div class="addSprayer animate__animated  cntForm" dir="rtl">
+            <form action="" enctype="multipart/form-data" id="formSprayer">
+                <h1 class="titleFORM"> إضافة جذاذة </h1>
+                <div class="cntComponent">
+                    <input type="text" name="inpNmaeSprayer" id="inpNmaeSprayer" placeholder="">
+                    <label for="inpNmaeSprayer" class="kbkINP">عنوان جذاذة </label>
+                </div>
+                <div class="cntComponentAREA cntChosesed4">
+                    <div class="cntVHOSE ">
+                        <input type="radio" name="secondAreachooseSPRAYER" id="firstAreachooseSPRAYER">
+                        <label for="firstAreachooseSPRAYER">مجال الجغرافيا</label>
+                    </div>
+
+                    <div class="cntVHOSE">
+                        <input type="radio" name="secondAreachooseSPRAYER" id="secondAreachooseSPRAYER">
+                        <label for="secondAreachooseSPRAYER">مجال التاريخ</label>
+                    </div>
+                </div>
+                <div class="cntComponentYT ">
+                    <label for="lessonlevel" class="">المستوى الدراسي </label>
+                    <select name="lessonlevel" id="lessonlevel">
+                        <option value="">إختر المستوى الدراسي </option>
+                        <option value="lyce1">جذع مشترك </option>
+                        <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                        <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                        <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+                    </select>
+                </div>
+                <div class="cntComponent">
+                    <label for="PDFsprayer" class="kbkINPUPLOAD">
+                        <p>تحميل الجذاذة </p><img src="./icones/file (2).png" alt="">
+                    </label>
+                    <input type="file" name="PDFsprayer" id="PDFsprayer" style="display: none;" accept=".pdf">
+                    <p class="errorP">المرجو إختيار ملف الجذاذة </p>
+                </div>
+                <button type="button" id="btnSendsprayer" class="btnShare">مشاركة </button>
+
+            </form>
+        </div>
+        <div class="addExam animate__animated  cntForm" dir="rtl">
+            <form action="" enctype="multipart/form-data" id="formExam">
+                <h1 class="titleFORM"> إضافة إمتحان </h1>
+                <div class="cntComponent">
+                    <input type="text" name="inpNameExam" id="inpNameExam" placeholder="">
+                    <label for="inpNameExam" class="kbkINP">عنوان الامتحان
+                    </label>
+                </div>
+
+                <div class="cntComponentYT ">
+                    <label for="lessonlevel" class="">المستوى الدراسي </label>
+                    <select name="lessonlevel" id="lessonlevel">
+                        <option value="">إختر المستوى الدراسي </option>
+                        <option value="lyce1">جذع مشترك </option>
+                        <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                        <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                        <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+                    </select>
+                </div>
+                <div class="cntComponent">
+                    <label for="EXAM_File" class="kbkINPUPLOAD">
+                        <p>تحميل الامتحان </p><img src="./icones/file (2).png" alt="">
+                    </label>
+                    <input type="file" name="EXAM_File" id="EXAM_File" style="display: none;" accept=".pdf">
+                    <p class="errorP">المرجو إختيار ملف الامتحان </p>
+                </div>
+                <button type="button" id="btnSendExam" class="btnShare">مشاركة </button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <h1 class="bigTile">
+        <img src="./icones/window.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h1>
+    <h3 class="secondTile">
+        <img src="./icones/upward-arrow.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h3>
+    <h5 class="thirdTile">
+        <img src="./icones/down.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h5>
+    <div class="textLesson">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </div>
+    <div class="divUndo" dir="rtl">
+        <p>لقد تم حدف العنصر ، هل تريد التراجع ؟</p>
+        <button id="btnUndo">تر اجع </button>
+    </div>
+    <div class="shadowDIV " dir="ltr">
+        <div class="PUP_UPASK_YES_NO animate__animated d_c">
+            <img src=".././MEDIA/checkmark.png" id="" alt=""
+                class="IconeMessageSuccess animate__animated animate__bounceInDown">
+            <img src=".././MEDIA/attention.png" id="" alt=""
+                class="IconeMessageNotice animate__animated animate__flash">
+            <img src=".././MEDIA/rejected.png" id="" alt="" class="IconeMessageError animate__animated animate__wobble">
+            <p class="MessgaeText"></p>
+            <div class="cnt_btns d_c">
+                <button id="btn_accept"> نعم</button>
+                <button id="btn_refuse">تراجع</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src=".././MAINJS/anmateDone.js"></script>
+    <script src="./js/addLesson.js"></script>
+
+</body>
+
+</html>

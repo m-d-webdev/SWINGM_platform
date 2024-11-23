@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعيين سورة الغلاف الشخصي </title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="MAINCSS/anmateDone.css">
+    <link rel="stylesheet" href="MAINCSS/CHANGE_PROFILE_IMAGE.css" />
+  </head>
+
+  <body>
+    <div class="page_chooos_profil">
+      <img class="backImg" src="MEDIA/und2.png" alt="" />
+      <div class="cnt_cheng_prf">
+        <p class="titleDIV">تعيين الصورة الشخصية</p>
+        <p>
+          لتعيين صورتك الشخصية أو تغييرها، انقر على زر "تحميل" أدناه. اختر صورة
+          من جهازك التي ترغب في استخدامها كصورة ملفك الشخصي. بمجرد اختيار
+          الصورة، اضغط على "حفظ" لتطبيقها. تساعد صورتك الشخصية في تخصيص حسابك
+          وتسهل على الآخرين التعرف عليك.
+        </p>
+        <div class="cnt_image_prf">
+          <img id="img_prfil" src="" alt="" />
+        </div>
+        <button id="btn_select_img">تحميل</button>
+        <button class="btn_to_be_sure">تاكيد</button>
+        <button class="btn_skip">تخطي</button>
+        <form id="form1" enctype="mltipart/form-data">
+          <!-- <input class="form-control" name="formFile" accept="" type="file" id="formFile"> -->
+          <input
+            type="file"
+            name="inp_img"
+            id="inp_img"
+            style="display: none"
+            accept="image/*"
+          />
+          <button id="btn_submit" type="submit" style="display: none"></button>
+        </form>
+      </div>
+    </div>
+    <script src="./MAINJS/anmateDone.js"></script>
+<script src="./MAINJS/changePrf.js"></script>
+  </body>
+</html>

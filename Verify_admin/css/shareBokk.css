@@ -1,0 +1,611 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', serif;
+    font-size: 14px !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1600px;
+}
+
+/*  */
+.bare_page .logo {
+    width: 80px;
+    height: 80px;
+}
+
+.bare_page .logo img {
+    width: 100%;
+}
+
+.bare_page {
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    margin-right: 10px;
+}
+
+.cnt_prof_pic img {
+    max-width: 100%;
+}
+
+.cnt_prof_pic {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 50%;
+    min-width: 50px;
+    /* display: none; */
+}
+
+.cnt_matr_connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    padding-top: 30px;
+    position: relative;
+}
+
+.not_connevt {
+    position: absolute;
+    top: 0;
+    color: red;
+    font-size: 12px;
+    right: 0;
+}
+
+#btn_connect_ac:hover {
+    background-color: rgb(0, 255, 204);
+    border: solid 1px rgba(29, 0, 0, 0);
+
+}
+
+#btn_connect_ac2:hover {
+    border: solid 1px rgba(29, 0, 0, 0);
+    background-color: rgb(0, 255, 204);
+
+}
+
+#btn_connect_ac2 img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+#btn_connect_ac img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+#btn_connect_ac {
+    background-color: rgba(135, 255, 231, 0);
+    width: 200px;
+    padding: 3px;
+    border: solid 1px rgba(29, 0, 0, 0.211);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+#btn_connect_ac2 {
+    background-color: rgba(135, 255, 231, 0);
+    width: 200px;
+    padding: 3px;
+    border: solid 1px rgba(29, 0, 0, 0.211);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------------------------------------------------- */
+.titlePage{
+    width: 100%;
+}
+.containerELEMENTS {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border:solid 1px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.titleCompage{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+textarea::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+textarea{
+    resize: none;
+    outline: none;
+}
+.inputsElements {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.titleINPUTS {
+    position: absolute;
+    top: 0;
+    font-size: 14px !important;
+    font-weight: 600;
+    right: 15px;
+}
+
+.compINP label {
+    position: absolute;
+    font-size: 12px !important;
+    transition: .2s;
+}
+
+.compINP select {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: solid 1px #0000002e;
+    padding: 5px;
+    padding-top: 35px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.compINP input:not(:placeholder-shown)~.lbl_COMP,
+.compINP input:focus~.lbl_COMP {
+    transform: translate(200px, -20px);
+    font-size: 9px !important;
+    color: #2f00ff;
+}
+
+.compINP input:focus {
+    border: solid 1px rgb(53, 53, 255);
+}
+
+.compINP input {
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.215);
+    outline: none;
+    padding: 5px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.compINP textarea::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+.compINP textarea {
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.215);
+    outline: none;
+    padding: 5px;
+    /* padding-top: 20px; */
+    resize: none;
+    border-radius: 10px;
+}
+
+.compINP {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.lbl_COMPSP {
+    top: 5px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.descCOMP {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    font-size: 12px !important;
+}
+
+.cntPrfBok .titleINPUTS {
+    font-size: 12px;
+}
+
+.cntPrfBok {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.279);
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+.cntIMG img {
+    max-width: 100%;
+}
+
+.cntIMG {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:700px;
+}
+
+.btn_uploadOPRFOL_book {
+    width: 80%;
+    margin-top: 30px;
+    background-color: #0c75ff;
+    padding: 6px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+}
+
+.cnt_uploadBook button img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.cnt_uploadBook button {
+    width: 100%;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.cnt_uploadBook {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: solid 1px rgba(0, 0, 0, 0.373);
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+
+.titleINPUTSs {
+    position: absolute;
+    top: -23px;
+    right: 0;
+    font-size: 12px !important;
+}
+/* =============================== */
+.writerInfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    border:solid 1px rgba(0, 0, 0, 0.29);
+    border-radius: 10px;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.cntWriterInfo .lbl_COMP{
+position: absolute;
+transition: .2s;
+
+}
+.cntWriterInfo input:focus~.lbl_COMP ,
+.cntWriterInfo input:not(:placeholder-shown)~.lbl_COMP {
+ transform: translate(150px, -15px);
+ font-size: 9px !important;
+}
+.cntWriterInfo input:focus{
+    border: solid 1px rgb(53, 53, 255);
+}
+.cntWriterInfo input{
+    width: 100%;
+    padding: 3px;
+    padding-top: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.537);
+    outline: none;
+    border-radius: 5px;
+
+}
+.cntWriterInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    max-width: 400px;
+    position: relative;
+}
+
+.DivwriterImg .getImgWriter{
+    padding: 3px ;
+    width: 140px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border: none;
+    background-color:  rgb(7, 172, 117);
+    color: #fff;
+}
+.DivwriterImg{
+    width: 60%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    /* padding-top: 40px; */
+    margin-top: 10px;
+}
+
+.cntImgWriter img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.heghtGreaterwidth img{
+    max-width: none;
+    max-height: 100%;
+    
+}
+.cntImgWriter{
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 20px;
+}
+.titleWriterImg{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 13px !important;
+}
+.cntWriterdefin textarea{
+    width: 100%;
+    padding: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.537);
+    outline: none;
+    border-radius: 5px;
+}
+.cntWriterdefin{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    position: relative;
+    margin-top: 40px;
+}
+
+/*  */
+#btnSendBook {
+    margin-top: 50px;
+    width: 300px;
+    padding: 7px;
+    background-color: #0c75ff;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+
+}
+
+@media screen and (max-width:800px) {
+    * {
+        font-size: 10px;
+    }
+
+    .bare_page .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bare_page {
+
+        padding-left: 0px;
+        padding: 2px;
+    }
+
+    .cnt_prof_pic {
+        width: 35px;
+        height: 35px;
+        min-height: 35px;
+        margin-left: 10px;
+        min-width: 35px;
+    }
+
+    .user_info {
+        margin-right: 5px;
+    }
+
+    .cnt_matr_connect {
+        padding-top: 15px;
+    }
+
+    #btn_connect_ac2 img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    #btn_connect_ac img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    #btn_connect_ac {
+        width: 120px;
+        padding: 2px;
+        margin-right: 10px;
+
+    }
+
+    #btn_connect_ac2 {
+        width: 100px;
+        padding: 2px;
+    }
+
+    .not_connevt {
+        font-size: 8px;
+        right: 5px;
+    }
+
+    .containerELEMENTS {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-top: 40px;
+        height: auto;
+    }
+
+    .inputsElements {
+        width: 100%;
+        padding: 4px;
+        height: auto;
+    }
+
+    .titleINPUTS {
+        font-size: 12px;
+        right: 8px;
+    }
+
+    .compINP {
+        margin-top: 40px;
+        width: 95%;
+    }
+
+    .compINP input {
+        width: 100%;
+        padding: 3px;
+        padding-right: 10px;
+        border-radius: 5px;
+        padding-top: 15px;
+        font-size: 12px;
+    }
+
+    .compINP input:not(:placeholder-shown)~.lbl_COMP,
+    .compINP input:focus~.lbl_COMP {
+        transform: translate(130px, -10px);
+        font-size: 6px;
+        color: #2f00ff;
+    }
+
+    .compINP select {
+        width: 100%;
+        padding: 3px;
+        padding-top: 25px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .lbl_COMPSP {
+        font-size: 10px;
+    }
+
+    .descCOMP {
+        top: -20px;
+        font-size: 9px  !important ;
+        right: 5px;
+    }
+
+    .cntPrfBok .titleINPUTS {
+        font-size: 10px;
+    }
+
+    .cntPrfBok {
+        width: 100%;
+        padding-top: 30px;
+        margin-top: 40px;
+
+        height: auto;
+    }
+
+    .cntIMG {
+        width: 95%;
+    }
+
+    .btn_uploadOPRFOL_book {
+        margin-top: 20px;
+        padding: 4px;
+    }
+
+    #btnSendBook {
+        padding: 4px;
+    }
+    .titleINPUTSs {
+        font-size: 9px !important;
+    }
+}
+
+.display {
+    display: flex;
+}
+.s-X3z-V4rB-H8tQ {
+    display: flex;
+}

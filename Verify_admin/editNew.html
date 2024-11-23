@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/editNew.css">
+
+</head>
+
+<body dir="rtl">
+    <div class="ptitlePage">
+        <button onclick="window.history.back()">
+            <img src="icones/left.png" class="imgBNtrowLeft" alt="">
+            <p>عودة </p>
+        </button>
+        <h1>صفحة تعديل الأخبار </h1>
+    </div>
+    <div class="bareSearch">
+        <input type="text" placeholder="  عنوان الخبر   " autocomplete="off" id="inpSearch">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+        </svg>
+        <div class="cntResults">
+        </div>
+    </div>
+
+    <div class="cntNew">
+        <div class="cntINputTitleNew">
+            <label for="title_new">عنوان الخبر </label>
+            <input type="text" name="title" id="title_new">
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntINputTitleNew">
+            <label for="newsThemes">موضوع الخبر</label>
+            <select id="newsThemes">
+                <option value="التعليم">التعليم</option>
+                <option value="السياسة">السياسة</option>
+                <option value="الأعمال والاقتصاد">الأعمال والاقتصاد</option>
+                <option value="التكنولوجيا">التكنولوجيا</option>
+                <option value="العلوم والصحة">العلوم والصحة</option>
+                <option value="الرياضة">الرياضة</option>
+                <option value="الترفيه">الترفيه</option>
+                <option value="نمط الحياة">نمط الحياة</option>
+                <option value="الأخبار العالمية">الأخبار العالمية</option>
+                <option value="البيئة">البيئة</option>
+                <option value="الجريمة والعدالة">الجريمة والعدالة</option>
+                <option value="الآراء والمقالات الافتتاحية">الآراء والمقالات الافتتاحية</option>
+                <option value="الأخبار المحلية">الأخبار المحلية</option>
+            </select>
+
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntINputTitleNew">
+            <label for="content">تفاصيل الخبر </label>
+            <textarea name="content" id="content"></textarea>
+            <button class="btnSave">حفظ </button>
+        </div>
+
+        <label for="inpUploadImg" class="btnAddImgs">
+            <p>اضافة صور</p>
+        </label>
+        <input type="file" name="" id="inpUploadImg" style="display: none;" accept="image/*">
+        <div class="cntNewImgs">
+            <div class="cntImgNew">
+                <button class="btnDeleteImg"><svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-trash-filled" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M20 6a1 1 0 0 1 .117 1.993l-.117 .007h-.081l-.919 11a3 3 0 0 1 -2.824 2.995l-.176 .005h-8c-1.598 0 -2.904 -1.249 -2.992 -2.75l-.005 -.167l-.923 -11.083h-.08a1 1 0 0 1 -.117 -1.993l.117 -.007h16z"
+                            stroke-width="0" fill="currentColor" />
+                        <path
+                            d="M14 2a2 2 0 0 1 2 2a1 1 0 0 1 -1.993 .117l-.007 -.117h-4l-.007 .117a1 1 0 0 1 -1.993 -.117a2 2 0 0 1 1.85 -1.995l.15 -.005h4z"
+                            stroke-width="0" fill="currentColor" />
+                    </svg></button>
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <button class="btnSaveDelteteImgs">حفظ </button>
+        <button class="btnSaveaddedImgs">إضافة و حفظ </button>
+    </div>
+    <script src="../MAINJS/anmateDone.js"></script>
+    <script src="./js/editNew.js"></script>
+</body>
+
+</html>

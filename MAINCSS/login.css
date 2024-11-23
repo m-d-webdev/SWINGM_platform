@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* PAGE LOGIN COED */
+.main_login {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* display: none; */
+    height: 100%;
+}
+
+.logo img {
+    width: 120px;
+    margin-right: 15px;
+}
+
+.logo p {
+    text-align: end;
+    font-family: "Amiri", serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    position: relative;
+    /* max-width: 600px; */
+    max-height: 800px;
+    height: 100%;
+    ;
+
+}
+
+.logo .backIMG {
+    width: auto;
+    display: block;
+    max-height: 80%;
+    max-width: 100%;
+}
+
+#form_login {
+    position: relative;
+    width: 50%;
+    max-width: 700px;
+    background-color: #ffffff;
+    height: 600px;
+    display: flex;
+    border: solid 1px rgba(0, 0, 0, 0.255);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 40px;
+    animation: ani_from .3s alternate;
+    padding-top: 40px;
+
+}
+
+.titleFOMR {
+    position: absolute;
+    font-family: "Amiri", serif;
+    top: 10px;
+    right: 20px;
+}
+
+.btn_create_acc {
+    position: absolute;
+    bottom: 10px;
+    background-color: transparent;
+    border: none;
+    font-family: "Amiri", serif;
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes ani_from {
+    0% {
+        transform: scale(0);
+    }
+}
+
+.matrc {
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgba(0, 0, 0, 0.032);
+    align-items: center;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #F2F4F4;
+    padding: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.matrc img {
+    width: 25px;
+    margin-right: 12px;
+    opacity: .5;
+}
+
+.err_email {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    color: red;
+    display: none;
+}
+
+.err_pass {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    color: red;
+    display: none;
+}
+
+.cnt_pass,
+.cnt_email {
+    position: relative;
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cnt_pass input:focus~.lbl_login,
+.cnt_pass input:not(:placeholder-shown)~.lbl_login {
+    transform: translate(0, -20px);
+    font-weight: 900;
+    color: #1a73e8;
+    font-size: 12px !important;
+    opacity: .7;
+}
+
+
+.cnt_email input:not(:placeholder-shown)~.lbl_login,
+.cnt_email input:focus~.lbl_login {
+    transform: translate(-0, -20px);
+    font-size: 12px !important;
+    opacity: .7;
+    color: #1a73e8;
+    font-weight: 900;
+}
+
+.cnt_pass input,
+.cnt_email input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 0px 5px 10px;
+    outline: none;
+    border: none;
+    /* border-radius: 10px; */
+    width: 100%;
+    /* height: 30px; */
+    /* max-width: ; */
+    color: #000000;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.cnt_pass input:focus,
+.cnt_email input:focus {
+    border-left: solid 1px #1a73e8;
+    ;
+    filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+}
+
+.cnt_pass label,
+.cnt_email label {
+    position: absolute;
+    transition: .2s;
+    left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 1, 5);
+    opacity: .6;
+    font-weight: 600;
+    bottom: 10px;
+    font-size: 17px;
+}
+
+.show_pass {
+    position: absolute;
+    bottom: -40px;
+    cursor: pointer;
+    right: 10px;
+}
+
+#btn_submi_login {
+    width: 90%;
+    background-color: #1a73e8;
+    /* background-color:  rgb(0, 30, 255); */
+    color: #ffffff;
+    /* color: #fff; */
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#btn_canc_login img {
+    width: 15px;
+
+}
+
+#btn_canc_login {
+    position: absolute;
+    top: 5px;
+    background-color: transparent;
+    right: 16px;
+    border: none;
+}
+
+.shadowDiv {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;    
+}
+
+.cntPopUpConckies {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    animation: asdin .3s linear;
+}
+
+@keyframes asdin {
+    0% {
+        transform: translateY(800px);
+    }
+}
+
+.cntPopUpConckies button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.cntPopUpConckies p {
+    font-size: 16px;
+}
+
+.cntPopUpConckies img {
+    width: 200px;
+}
+
+.cntPopUpConckies div{
+    flex-direction:row;   
+    display: flex;     
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media screen and (max-width:800px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    .main_login {
+        background-size: cover;
+        flex-direction: column;
+        padding: 0;
+        border: solid 1px black;
+        /* justify-content: flex-end; */
+        /* background-repeat: no-repeat;
+        background-image: url('../background/Preppy\ Empty\ Nester.jfif');
+    */
+    }
+
+    .logo p {
+        display: none;
+        width: 70px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo .backIMG {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        /* width: 100%; */
+        width: auto;
+    }
+
+    .logo {
+        width: 95%;
+        max-width: none;
+        padding: 8px;
+        background-color: #fff;
+        border-radius: 5px;
+        height: 30%;
+        top: 0;
+        /* position: absolute; */
+    }
+
+
+
+    #form_login {
+        height: 50%;
+        border-radius: 5px;
+        padding: 5px;
+        width: 95%;
+        padding-top: 40px;
+        background-color: #fff;
+    }
+
+    .matrc img {
+        width: 21px;
+        /* font-size: 15px; */
+    }
+
+    .title_page {
+        font-size: 20px;
+    }
+
+    .cnt_pass input,
+    .cnt_email input {
+        padding: 15px 5px 5px 5px;
+        font-size: 15px;
+        width: 100%;
+        border: none;
+        border-left: 2px #07ffa8;
+    }
+
+    .cnt_email input:not(:placeholder-shown)~.lbl_login,
+    .cnt_email input:focus~.lbl_login {
+        transform: translate(-0, -15px);
+        font-size: 8px ;
+    }
+
+    .cnt_pass input:focus~.lbl_login,
+    .cnt_pass input:not(:placeholder-shown)~.lbl_login {
+        transform: translate(0, -15px);
+        font-size: 8px;
+    }
+
+    #btn_submi_login {
+        width: 95%;
+        font-size: 12px;
+        padding: 10px;
+
+    }
+
+    .cnt_pass label,
+    .cnt_email label {
+        font-size: 11px;
+    }
+
+    .title_page img {
+        width: 90px;
+    }
+
+    .shadowDiv {
+        align-items: end;
+    }
+
+    .cntPopUpConckies {
+        height: 50%;
+        background-color: #fff;
+        display: flex;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    @keyframes asdin {
+        0% {
+            transform: translateY(500px);
+        }
+    }
+
+    .cntPopUpConckies div{
+        flex-direction: column;        
+    }
+    .cntPopUpConckies button {
+        margin-top: 20px;
+        width: 200px;
+    }
+
+    .cntPopUpConckies p {
+        font-size: 14px;
+    }
+
+    .cntPopUpConckies img {
+        width: 150px;
+
+    }
+
+}
+
+.display {
+    display: flex;
+}

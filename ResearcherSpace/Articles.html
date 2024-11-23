@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/Articles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+  <link rel="stylesheet" href="./css/page_comment.css" />
+  <link rel="stylesheet" href="./css/style_cnt_ma9al.css" />
+  <link rel="stylesheet" href="./css/style_book.css" />
+  <link rel="stylesheet" href="./css/news.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="main_1">
+    <div class="snt_ma9alat">
+
+      <div class="ma9al">
+        <p class="title_article"></p>
+        <p class="m9l_text"></p>
+        <div class="inter_post">
+          <div class="snt_intr">
+            <div class="List_choices">
+              <button>حفظ</button>
+              <button>متابعة الكاتب</button>
+              <button>إبلاغ عن المحتوى</button>
+              <button>تقييم المقال</button>
+            </div>
+            <button class="btn_more_detail1 clasdfs">
+              <img src="icones/more.png" alt="" />
+            </button>
+            <button id="btn_like_post" class="clasdfs">
+              <img src="icones/btnLike.png" alt="" />
+              <p class="num_like"></p>
+            </button>
+            <button id="btn_pg_coment" class="clasdfs">
+              <img src="icones/chat (1).png" alt="" />
+              <p class="num_coments"></p>
+            </button>
+          </div>
+          <div class="profil_user">
+            <p class="user_name"></p>
+            <div class="img_prf">
+              <img src="" alt="" />
+            </div>
+            <p class="time_post"></p>
+          </div>
+        </div>
+      </div>
+      <div class="mainBooks">
+        <div class="book">
+          <div class="cntImage">
+            <img src="https://i.pinimg.com/564x/4e/ea/7e/4eea7e64a90a7b393ec509c64ccb2b16.jpg" alt="" />
+          </div>
+
+          <!-- ----------------------------- -->
+          <div class="bookComponent">
+            <div class="dsecComponS">
+              <p class="nameBook">آخر يوم لمحكوم عليه بالإعدام</p>
+            </div>
+            <div class="someSPACE">
+              <div class="dsecCompon">
+                <p class="title_comp1">: النوع</p>
+                <p class="WRITERNAME" id="type_book">محمد محمد</p>
+              </div>
+              <div class="dsecCompon">
+                <p class="title_comp1">: المؤلف</p>
+                <p class="WRITERNAME" id="writer_name">محمد محمد</p>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="interactionBook">
+            <a class="btnGetBook">
+              <img src="icones2/about.png" alt="" />
+              <p> معرفة المزيد </p>
+            </a>
+            <button id="btn_open_page_coment" class="interComp">
+              <p class="num_coments"></p>
+              <img src="icones/chat (1).png" alt="" />
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="news">
+        <div class="cnt_Top_stories">
+          <div class="newIMG">
+            <img src="" alt="" />
+            <h1 class="titleNews"></h1>
+          </div>
+          <div class="newText">
+            <p class="textNews"></p>
+            <button class="btnGetMore">المزيد</button>
+          </div>
+
+        </div>
+        <div class="LatestNews">
+          <div class="newIMGLASTN"><img src="" alt="" /></div>
+          <div class="newTextLAST">
+            <h1 class="titlastsleNews"></h1>
+            <p class="textlastsleNews"></p>
+          </div>
+          <button class="btnGetMore">المزيد</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <button id="btn_getMA9ALAT" class="mBTN">
+        <img src="icones2/document (1).png" alt="" />
+        <p>المقالات</p>
+      </button>
+      <button id="btn_get_books" class="mBTN">
+        <img src="icones2/book-of-black-cover-closed (1).png" alt="" />
+        <p>الكتب</p>
+      </button>
+      <button id="btn_get_news" class="mBTN">
+        <img src="icones2/megaphone.png" alt="" />
+        <p>المستجدات</p>
+      </button>
+
+      <button class="mBTN" id="btn_PAGE_SEARCH">
+        <img src="icones2/search copy.png" alt="" />
+        <p>البحث</p>
+      </button>
+      <button class="mBTN btn_profile_page" id="btn_profile_page">
+        <div class="cntImgUser"><img id="imgUser" src="" alt="" /></div>
+        <p>الملف الشخصي</p>
+      </button>
+    </div>
+  </main>
+  <div class="page_coment">
+    <div class="cnt_pg_cometn">
+      <div class="coment_main">
+        <div class="commentContent">
+          <div class="cnt_prf_coment">
+            <p class="full_name_coment"></p>
+            <p class="coment_text"></p>
+            <div class="interaction_coment">
+              <button class="btn_moreCBCOMENT">
+                <img src="icones/report.png" alt="" />
+              </button>
+              <button class="btn_rep_coment">
+                <img src="icones/reply.png" alt="" />
+              </button>
+              <button class="btn_like_coment">
+                <img src="./icones/likeOn.png" alt="" />
+                <p class="num_like_coment">0</p>
+              </button>
+              <button class="btn_unlike_coment">
+                <img src="icones/unlike.png" alt="" />
+              </button>
+              <p class="time_coment"></p>
+            </div>
+          </div>
+          <div class="cnt_img2">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="list_replayed_coment">
+        <button class="title_list_replay">
+          <img src="icones/expand-button.png" alt="" />
+          <p>الردود</p>
+        </button>
+      </div>
+      <div class="coment_main_repaly animate__animated animate__fadeInLeft">
+        <div class="commentContent">
+          <div class="cnt_prf_coment">
+            <p class="full_name_coment"></p>
+            <p class="coment_text"></p>
+            <div class="interaction_coment">
+              <button class="btn_moreCBCOMENT">
+                <img src="icones/report.png" alt="" />
+              </button>
+              <button class="btn_rep_coment">
+                <img src="icones/reply.png" alt="" />
+              </button>
+              <button class="btn_like_coment">
+                <img src="./icones/likeOn.png" alt="" />
+                <p class="num_like_coment">0</p>
+              </button>
+              <button class="btn_unlike_coment">
+                <img src="icones/unlike.png" alt="" />
+              </button>
+              <p class="time_coment"></p>
+            </div>
+          </div>
+          <div class="cnt_img2">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <button id="btn_canc_pg_coment">
+        <img src="icones/cn1.png" alt="" />
+      </button>
+      <div class="coment_space"></div>
+      <div class="write_coment_space">
+        <div class="reply_how"></div>
+        <div class="controlErite">
+          <button id="btnSendComment">
+            <img src="icones/img_SEND_MESSAGE.png" alt="" />
+          </button>
+          <textarea type="text" id="inp_wr_coment" name="inp_wr_coment" placeholder="شارك تعليقك ...."
+            dir="rtl"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="popUp_report">
+      <p class="title_report">الإبلاغ</p>
+      <div class="list_choeses_report">
+        <p class="tit_res">سبب الإبلاغ</p>
+        <span>
+          <img src="" alt="" />
+          <p>محتوى غير لائق أو مسيء</p>
+        </span>
+        <span>
+          <img src="" alt="" />
+          <p>محتوى غير مرغوب فيه (سبام)</p>
+        </span>
+        <span>
+          <img src="" alt="" />
+          <p>معلومات مضللة أو كاذبة</p>
+        </span>
+        <span>
+          <img src="" alt="" />
+          <p>انتهاك الخصوصية</p>
+        </span>
+        <span>
+          <img src="" alt="" />
+          <p>تعدي على حقوق الملكية الفكرية</p>
+        </span>
+        <span>
+          <img src="" alt="" />
+          <p>تحريض على الكراهية أو العنف</p>
+        </span>
+      </div>
+      <div class="add_des">
+        <p class="tit_addDes">اضافة وصف</p>
+        <textarea name="inp_desc" class="inp_desc" dir="rtl" placeholder="الوصف"></textarea>
+      </div>
+      <button id="btn_send_report">ارسال</button>
+    </div>
+
+    <div class="cnt_list_friend">
+      <p class="title_cntFreind">مشاركة</p>
+      <div class="MainList">
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+
+        <div class="cnt_friendDIV">
+          <p class="fullNmaeFriend">اسم الصديق</p>
+          <div class="cntImgFriend">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+      <button id="btn_send_ma9alFriend">
+        <img src="icones/send-message.png" alt="" />إرسال
+      </button>
+    </div>
+
+    <div class="CntRatting">
+      <p class="title_cntFreind">تقييم</p>
+      <div class="cnt_rattingStart">
+        <p class="title_cntFreind">تقييم من 1 إلى 5 نجوم</p>
+        <div class="rating">
+          <input type="radio" id="star-1" name="star-radio" value="star-1" />
+          <label for="star-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path pathLength="360"
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+              </path>
+            </svg>
+          </label>
+          <input type="radio" id="star-2" name="star-radio" value="star-1" />
+          <label for="star-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path pathLength="360"
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+              </path>
+            </svg>
+          </label>
+          <input type="radio" id="star-3" name="star-radio" value="star-1" />
+          <label for="star-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path pathLength="360"
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+              </path>
+            </svg>
+          </label>
+          <input type="radio" id="star-4" name="star-radio" value="star-1" />
+          <label for="star-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path pathLength="360"
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+              </path>
+            </svg>
+          </label>
+          <input type="radio" id="star-5" name="star-radio" value="star-1" />
+          <label for="star-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path pathLength="360"
+                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+              </path>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="cntDesRating">
+        <p class="title_cntFreind">إضافة وصف</p>
+        <textarea id="inp_desRatting" placeholder="وصف ...." dir="rtl"></textarea>
+      </div>
+      <button id="btn_send_ratting">إرسال</button>
+    </div>
+
+
+    <div class="menu_ma9al">
+      <button>الكل</button>
+      <button>مقالة تحليلية</button>
+      <button>مقالة تقريرية</button>
+      <button>مقالة تعليمية</button>
+      <button>مقالة رأي</button>
+      <button>مقالة علمية</button>
+      <button>مقالة سردية</button>
+      <button>مقالة تحقيقية</button>
+      <button>مقالة ترفيهية</button>
+    </div>
+  </div>
+
+  <div class="pop_message">
+    <p>تم الإبلاغ</p>
+  </div>
+
+  <div class="shadowDIV ">
+    <div class="PUP_UPASK_YES_NO animate__animated ">
+      <img src=".././MEDIA/checkmark.png" id="" alt=""
+        class="IconeMessageSuccess animate__animated animate__bounceInDown">
+      <img src=".././MEDIA/attention.png" id="" alt="" class="IconeMessageNotice animate__animated animate__flash">
+      <img src=".././MEDIA/rejected.png" id="" alt="" class="IconeMessageError animate__animated animate__wobble">
+      <img src=".././MEDIA/page-not-found.png" id="" alt="" class="IconNotConnected animate__animated animate__wobble">
+      <p class="MessgaeText"></p>
+      <div class="cnt_btns d_c">
+        <button id="btn_accept"> نعم</button>
+        <button id="btn_refuse">تراجع</button>
+      </div>
+    </div>
+
+  </div>
+  <script src="../MAINJS/anmateDone.js"></script>
+  <script src="./js/Article.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amiri", serif;
+    font-size: 13px
+}
+
+bodY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.bare_page .logo {
+    width: 80px;
+    height: 80px;
+}
+
+.bare_page .logo img {
+    width: 100%;
+}
+
+.bare_page {
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    margin-right: 10px;
+}
+
+.cnt_prof_pic img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top;}
+
+.cnt_prof_pic {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    min-height: 50px;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 50%;
+    min-width: 50px;
+    /* display: none; */
+}
+
+.cnt_matr_connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;
+    padding-top: 30px;
+    position: relative;
+}
+
+.not_connevt {
+    position: absolute;
+    top: 0;
+    color: red;
+    font-size: 12px;
+    right: 0;
+}
+
+#btn_connect_ac:hover {
+    background-color: rgb(0, 255, 204);
+    border: solid 1px rgba(29, 0, 0, 0);
+
+}
+
+#btn_connect_ac2:hover {
+    border: solid 1px rgba(29, 0, 0, 0);
+    background-color: rgb(0, 255, 204);
+
+}
+
+#btn_connect_ac2 img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+#btn_connect_ac img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+#btn_connect_ac {
+    background-color: rgba(135, 255, 231, 0);
+    width: 200px;
+    padding: 3px;
+    border: solid 1px rgba(29, 0, 0, 0.211);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+#btn_connect_ac2 {
+    background-color: rgba(135, 255, 231, 0);
+    width: 200px;
+    padding: 3px;
+    border: solid 1px rgba(29, 0, 0, 0.211);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.cntCompoent textarea {
+    width: 100%;
+    padding: 10px;
+    /* text-align: end; */
+    outline: none;
+    border: solid 1px rgba(0, 0, 0, 0.284);
+    font-size: 15px;
+    max-height: none;
+    overflow-y: hidden;
+    /* Hide the vertical scrollbar */
+    resize: none;
+    direction: rtl;
+    /* Ensure right-to-left text direction */
+    margin-top: 10px;
+
+}
+
+.cntCompoent select {
+    width: 100%;
+    text-align: end;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.29);
+}
+
+.cntCompoent {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.cntCompoentd p {
+    width: 100%;
+    text-align: end;
+}
+
+.cntCompoentd {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+    min-width: 600px;
+}
+
+.note img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.note {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.labl_uplaoadIMG img {
+    width: 27px;
+    margin-right: 15px;
+}
+
+.labl_uplaoadIMG {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a73e8;
+    border: none;
+    padding: 5px;
+    max-width: 600px;
+    border-radius: 20px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.cnt_img img {
+    width: 100%;
+}
+
+.cntIMGS .cnt_img button img {
+    width: 20px;
+}
+
+.cntIMGS .cnt_img img:hover~.btn_rmimg {
+    opacity: 1;
+}
+
+.cntIMGS .cnt_img button:hover {
+    opacity: 1;
+}
+
+.cnt_img button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: solid 1px black;
+    opacity: 0;
+}
+
+.cnt_img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    display: none;
+}
+
+.cntIMGS {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px
+}
+
+#btn_submit {
+    width: 300px;
+    margin-top: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #1a73e8;
+}
+
+@media screen and (max-width: 800px) {
+    * {
+
+        font-size: 10px
+    }
+
+    bodY {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1400px;
+    }
+
+    .bare_page .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .bare_page {
+
+        padding-left: 0px;
+        padding: 2px;
+    }
+
+    .cnt_prof_pic {
+        width: 35px;
+        height: 35px;
+        min-height: 35px;
+        margin-left: 10px;
+        min-width: 35px;
+    }
+
+    .user_info {
+        margin-right: 5px;
+    }
+
+    .cnt_matr_connect {
+        padding-top: 15px;
+    }
+
+    #btn_connect_ac2 img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    #btn_connect_ac img {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    #btn_connect_ac {
+        width: 120px;
+        padding: 2px;
+        margin-right: 10px;
+
+    }
+
+    #btn_connect_ac2 {
+        width: 100px;
+        padding: 2px;
+    }
+
+    .not_connevt {
+        font-size: 8px;
+        right: 5px;
+    }
+
+    /*  */
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px
+    }
+
+    .cntCompoent textarea {
+        padding: 5px;
+        font-size: 13px;
+
+    }
+
+    .cntCompoent select {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .cntCompoent {
+        margin-top: 15px;
+    }
+
+    .cntCompoentd {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        max-width: 100%;
+        min-width: none;
+        width: 100%;
+    }
+
+    .labl_uplaoadIMG img {
+        width: 20px;
+        margin-right: 15px;
+    }
+
+    .labl_uplaoadIMG {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #1a73e8;
+        border: none;
+        padding: 3px;
+        max-width: 300px;
+        border-radius: 20px;
+        margin: 10px 0;
+        color: #fff;
+    }
+
+
+
+    .cntIMGS .cnt_img button img {
+        width: 15px;
+    }
+
+    .cnt_img button {
+        top: 5px;
+        left: 5px;
+        width: 20px;
+        height: 20px;
+        opacity: .5;
+    }
+
+    .cnt_img {
+        max-width: 45%;
+        width: auto;
+        height: 250px;
+        overflow: hidden;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .cntIMGS {
+        padding: 0px;
+    }
+
+
+}
+
+.display {
+    display: flex;
+}

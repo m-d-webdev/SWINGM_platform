@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amiri', serif;
+    font-size: 14px;
+}
+
+
+
+.page_chooos_profil {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.cnt_cheng_prf p {
+    text-align: end;
+}
+
+.cnt_cheng_prf {
+    width: 45%;
+    height: 700px;
+    max-width: 800px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.203);
+    border-radius: 5px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+}
+
+.titleDIV {
+    position: absolute;
+    top: 8px;
+    font-size: 16px;
+
+}
+
+.cnt_image_prf img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cnt_image_prf {
+    height: 250px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.388));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+}
+
+#btn_select_img {
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(69, 255, 159);
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-radius: 6px;
+}
+
+.btn_to_be_sure {
+    width: 200px;
+    padding: 5px;
+    background-color: rgb(4, 113, 255);
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0);
+    border-radius: 6px;
+    display: none;
+}
+
+.btn_skip {
+    width: 200px;
+    padding: 5px;
+    background-color: rgba(69, 255, 159, 0);
+    border: solid 1px rgba(0, 0, 0, 0.293);
+    border-radius: 6px;
+}
+
+.backImg {
+    /* display: none; */
+    max-width: 50%;
+    max-height: 700px;
+}
+
+@media screen and (max-width : 800px) {
+    * {
+        font-size: 10px;
+    }
+
+
+    .page_chooos_profil {
+        align-items: end;
+        padding: 1px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+
+    }
+
+    .backImg {
+        max-width: 100%;
+        max-height: 30%;
+        display: block;
+    }
+
+    .cnt_cheng_prf {
+        width: 100%;
+        height: 70%;
+        max-width: none;
+        padding: 10px;
+        border-radius: 10px 10px 0 0;
+        padding-top: 30px;
+    }
+
+    .titleDIV {
+        top: 4px;
+        font-size: 13px;
+    }
+
+    .cnt_image_prf {
+        height: 150px;
+        width: 150px;
+        align-items: start;
+
+    }
+
+    #btn_select_img {
+        width: 200px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+
+    .btn_to_be_sure {
+        width: 200px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+
+    .btn_skip {
+        width: 200px;
+        padding: 3px;
+        border-radius: 20px;
+    }
+}
+
+.display {
+    display: flex;
+}

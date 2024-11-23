@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit book</title>
+    <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/editBook.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body dir="rtl">
+
+    <div class="container">
+        <div class="ptitlePage">
+            <button onclick="window.history.back()">
+                <img src="icones/left.png" class="imgBNtrowLeft" alt="">
+                <p>عودة </p>
+            </button>
+            <h1>صفحة تعديل الكتب </h1>
+        </div>
+        <div class="bareSearch">
+            <input type="text" placeholder=" اسم الكتاب " autocomplete="off" id="inpSearch">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+            </svg>
+
+            <div class="cntResults">
+            </div>
+        </div>
+
+        <div class="cntBook">
+            <p class="titleEditBook">تعديل كتاب</p>
+            <form action="" class="formBook">
+                <div class="cntInputComponent">
+                    <input type="text" id="name" name="name" placeholder="">
+                    <label for="name"> اسم الكتاب</label>
+                    <button type="button">حفظ </button>
+                </div>
+                <div class="cntInputComponent">
+                    <input type="text" id="publication_date" name="publication_date" placeholder="">
+                    <label for="publication_date"> تاريخ إصدار الكتاب </label>
+                    <button type="button">حفظ </button>
+                </div>
+
+                <div class="cntInputComponent">
+                    <input type="text" id="langue" name="langue" placeholder="">
+                    <label for="langue">لغة الكتاب </label>
+                    <button type="button">حفظ </button>
+                </div>
+                <div class="cntInputComponent">
+                    <input type="text" id="genre" name="genre" placeholder="">
+                    <label for="genre"> نوع الكتاب</label>
+                    <button type="button">حفظ </button>
+                </div>
+
+                <div class="cntInputComponent">
+                    <input type="text" id="description" name="description" placeholder="">
+                    <label for="description">وصف الكتاب</label>
+                    <button type="button">حفظ </button>
+                </div>
+                <div class="cntInputComponent">
+                    <input type="text" id="type" name="type" placeholder="">
+                    <label for="type"> نوع ملف الكتاب</label>
+                    <button type="button">حفظ </button>
+                </div>
+
+                <p class="psadofiusdp">معلومات الكاتب </p>
+                <div class="cntInputComponent">
+                    <input type="text" id="book_auther" name="writer_name" placeholder="">
+                    <label for="book_auther"> اسم الكاتب</label>
+                    <button type="button">حفظ </button>
+                </div>
+
+                <div class="cntInputComponent">
+                    <input type="text" id="auther_info" name="writerDefine" placeholder="">
+                    <label for="auther_info"> حول الكاتب</label>
+                    <button type="button">حفظ </button>
+                </div>
+
+                <div class="cntWriterImg">
+                    <p class="titleUserImg">صورة الكاتب</p>
+                    <label type="button" for="inpWriterImg">تعديل </label>
+                    <button type="button" class="btnSaveWriterImg">حفظ</button>
+
+                    <img src="" alt=""
+                        class="imgWriter">
+                </div>
+
+            </form>
+            <div class="CntImgBook">
+                <img src="" alt="" class="CoverImg">
+                <form action="" enctype="multipart/form-data" id="formCoverImg">
+                    <input type="file" style="display: none;" id="inpCoverBook" name="file">
+                </form>
+                <label for="inpCoverBook">تعديل</label>
+                <button type="button" class="btnSaveCoverImg">حفظ</button>
+            </div>
+
+        </div>
+        <button id="btnDeleteBook"> Delete</button>
+    </div>
+    <form action="" style="display: none;" enctype="multipart/form-data" id="fromWriterImg">
+        <input type="file" style="display: none;" id="inpWriterImg" name="file">
+    </form>
+    <script src="../MAINJS/anmateDone.js"></script>
+    <script  src="./js/editBook.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nashr_ma9al.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href=".././MAINCSS/anmateDone.css" />
+  
+  </head>
+
+  <body dir="rtl">
+    <main class="maipage3">
+      <div class="bare_page">
+        <div class="cnt_info_user">
+          <div class="user_info">
+            <div class="cnt_prof_pic">
+              <img src="" alt="" />
+            </div>
+            <p class="full_name2"></p>
+          </div>
+          <div class="cnt_matr_connect">
+            <a href="../page_sign_in.html" id="btn_connect_ac"
+              >انشاء حساب جديد <img src="icones/add-user.png" alt=""
+            /></a>
+            <a href="../page_login.html" id="btn_connect_ac2"
+              >تسجيل الدخول <img src="icones/account.png" alt=""
+            /></a>
+            <p class="not_connevt">
+              ! يجب الاتصال بحساب للتمكن من النشر في المنصة
+            </p>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="icones/logo_rem.png" alt="" />
+        </div>
+      </div>
+      <div class="cnt_article">
+        <div class="title_share_article">
+          <p class="description">
+            مشاركة مقالة: استكشاف أفق المعرفة وتبادل الأفكار في موقعنا
+          </p>
+        </div>
+        <p class="desc_artcl">
+          العنوان الرئيسي للمقالة والذي يجذب انتباه القارئ ويعطي فكرة عن موضوع
+          المقالة.
+        </p>
+        <div class="DVG0">
+          <input class="article_title" id="article_title" placeholder="" />
+          <label for="article_title" class="lbl_artc_title" placeholder=""
+            >عنوان المقال</label
+          >
+        </div>
+        <p class="desc_artcl">
+          يحدد هذا القسم نوع المقالة، مثل مقالة إخبارية، تحليلية، علمية،
+          تعليمية، أو ترفيهية. يساعد هذا القراء في معرفة السياق والتوقعات من
+          المقالة
+        </p>
+        <div class="DVG2">
+          <select name="type_articl" id="type_articl"> 
+            <option value=""></option>
+            <option value="مقالة تحليلية">مقالة تحليلية</option>
+            <option value="مقالة تقريرية">مقالة تقريرية</option>
+            <option value="مقالة تعليمية">مقالة تعليمية</option>
+            <option value="مقالة رأي">مقالة رأي</option>
+            <option value="مقالة علمية">مقالة علمية</option>
+            <option value="مقالة سردية">مقالة سردية</option>
+            <option value="مقالة تحقيقية">مقالة تحقيقية</option>
+            <option value="مقالة ترفيهية">مقالة ترفيهية</option>
+          </select>
+          <label for="type_articl" class="lbl_chos_tpy">نوعية المقال</label>
+        </div>
+
+        <div class="DVG">
+          <p class="desc_artcl">
+            نص المقالة الرئيسي الذي يحتوي على الفقرات والأفكار والمعلومات
+            الأساسية. يتناول كل قسم من المحتوى جانبًا معينًا من الموضوع بشكل
+            مفصل:
+          </p>
+          <textarea
+            name="article_text_id"
+            id="article_text_id"
+            placeholder="اكتب مقالك هنا...."
+            style="resize: none;"
+          ></textarea>
+        </div>
+
+        <div class="DVG3">
+          <button id="btn_share_article">
+            نشر <img src="icones/send.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="shadowDIV d_c">
+      <div class="PUP_UPASK_YES_NO animate__animated animate__rubberBand">
+        <img
+          src=".././MEDIA/checkmark.png"
+          id=""
+          alt=""
+          class="IconeMessageSuccess animate__animated animate__bounceInDown"
+        />
+        <img
+          src=".././MEDIA/attention.png"
+          id=""
+          alt=""
+          class="IconeMessageNotice animate__animated animate__flash"
+        />
+        <img
+          src=".././MEDIA/rejected.png"
+          id=""
+          alt=""
+          class="IconeMessageError animate__animated animate__wobble"
+        />
+        <p class="MessgaeText"></p>
+        <div class="cnt_btns d_c">
+          <button id="btn_accept">نعم</button>
+          <button id="btn_refuse">تراجع</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src=".././MAINJS/anmateDone.js"></script>
+    <script src="./js/nashr_ma9al.js"></script>
+  </body>
+</html>

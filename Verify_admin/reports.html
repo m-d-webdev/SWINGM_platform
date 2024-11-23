@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/reports.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+</head>
+
+<body dir="rtl">
+    <div class="ptitlePage">
+        <button onclick="window.history.back()">
+            <img src="icones/left.png" class="imgBNtrowLeft" alt="">
+            <p>عودة </p>
+        </button>
+        <h1>صفحة مراجعة الإبلاغات </h1>
+    </div>
+    <div class="containerPAGE1">
+        <h1 class="titleReportafsdf">الإبلاغات الغير مراجعة</h1>
+        <div class="listPreprtsLinks">
+        </div>
+        <button id="btnGetAllReports">عرض جميع الإبلاغات</button>
+        <div class="aboutReport">
+            <h2 id="reprtTitle">إبلاغاتصفحة مراجعة الإبلاغات صفحة مراجعة ا</h2>
+            <table>
+                <tr>
+                    <th>
+                        <p>العنصر المبلغ عنه </p>
+                    </th>
+                    <th>
+                        <p> أسباب ألإبلاغ </p>
+                    </th>
+                    <th>
+                        <p> توضيح </p>
+                    </th>
+                    <th>
+                        <p> نوع العنصر </p>
+                    </th>
+                    <th>
+                        <p> الشخص المبلغ </p>
+                    </th>
+                    <th>
+                        <p>تاريخ ألإبلاغ </p>
+                    </th>
+                    <th>
+                        <p> الحالة </p>
+                    </th>
+                </tr>
+                <tr class="infoReportItem">
+                    <td>
+                        <p class="reportedItem"></p>
+                    </td>
+                    <td>
+                        <p class="reportResons"></p>
+                    </td>
+                    <td>
+                        <p class="reportMessage"></p>
+                    </td>
+                    <td>
+                        <p class="itemType"></p>
+                    </td>
+                    <td class="asdfasdf">
+                        <h1 class="reporter"> </h1>
+                    </td>
+                    <td>
+                        <p class="reportDate"></p>
+                    </td>
+                    <td>
+                        <p class="reporteStatus"></p>
+                    </td>
+                </tr>
+            </table>
+            <div class="cntBUtteonsCheckOut">
+                <button id="btnChecked">
+                    <p>تمييز كمراجع </p>
+                </button>
+                <button id="btnCheckeArticle">
+                    <p>تحقق من العنصر </p>
+                </button>
+            </div>
+        </div>
+        <div class="cntCommntAndArticles">
+            <div class="coment_main">
+                <div class="commentContent">
+                    <div class="cnt_img2">
+                        <img src="" alt="" />
+                    </div>
+                    <div class="cnt_prf_coment">
+                        <h1 class="full_name_coment"></h1>
+                        <p class="coment_text"></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ma9al">
+            <p class="title_article"></p>
+            <p class="m9l_text"></p>
+            <div class="inter_post">
+                <div class="profil_user">
+                    <div class="img_prf">
+                        <img src="" alt="" />
+                    </div>
+                    <p class="user_name"></p>
+
+                    <p class="time_post"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../MAINJS/anmateDone.js"></script>
+    <script src="./js/reports.js"></script>
+</body>
+
+</html>

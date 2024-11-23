@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="ResearcherSpace/css/Articles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="MAINCSS/SEARCH_PAGE.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <button id="btn_back">
+        <img
+          src="ResearcherSpace/icones2/left.png"
+          class="btn_backimg"
+          alt=""
+        />
+        <p>عودة</p>
+      </button>
+      <div class="cnt_logo">
+        <img src="ResearcherSpace/icones/logo_rem.png" alt="" />
+      </div>
+
+      <div class="cnt_search_bare">
+        <div class="cnt_type_items">
+          <button id="btn_type_item"></button>
+          <div class="TYPE_ITEME animate__animated">
+            <button class="btn_type_search">
+              <p>الكل</p>
+            </button>
+            <button class="btn_type_search">
+              <p>أشخاص</p>
+            </button>
+            <button class="btn_type_search">
+              <p>المقالات</p>
+            </button>
+            <button class="btn_type_search">
+              <p>الكتب</p>
+            </button>
+            <button class="btn_type_search">
+              <p>الدروس- جذاذات</p>
+            </button>
+          </div>
+        </div>
+        <form action="" id="form_search">
+          <input
+            type="text"
+            name="search"
+            id="inp_search"
+            dir="rtl"
+            placeholder="البحث في منصة SWINGM"
+            autocomplete="off"
+          />
+        </form>
+        <img id="btn_search" src="ResearcherSpace/icones2/search.png" alt="" />
+      </div>
+      <div class="MAIN_Suggestions"></div>
+
+      <div class="cnt_results">
+        <div class="noResuEleme">
+          <img src="./MEDIA/not-found.png" alt="" />
+          <p>لم أيتيم العثور على أي نتائج</p>
+        </div>
+      </div>
+      <div class="cntMa9alatFounded">
+        <p class="titleCntFounded">المقالات</p>
+      </div>
+
+      <div class="cntBooksFounded">
+        <p class="titleCntFounded">الكتب</p>
+      </div>
+      <div class="cntPeopelFounded">
+        <p class="titleCntFounded">الاشخاص</p>
+      </div>
+      <div class="cntessonsFounded">
+        <p class="titleCntFounded">الدروس</p>
+      </div>
+    </div>
+
+    <div class="book" dir="rtl">
+      <div class="cntImage">
+        <img src="" alt="" />
+      </div>
+      <div class="bookComponent">
+        <h1 class="nameBook"></h1>
+        <p class="bookWriter" id="publisher_name"></p>
+      </div>
+    </div>
+    <div class="elemArticle">
+      <h3 class="titleArticle"></h3>
+      <p class="m9l_text"></p>
+
+      <div class="interactioArticle">
+        <p class="cnt_nameuserARTICLE"></p>
+        <div class="cnt_imgUserARTICLE">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="elemUser">
+      <p class="cnt_nameuser"></p>
+      <div class="cnt_imgUser">
+        <img src="" alt="" />
+      </div>
+    </div>
+    <div class="T">
+      <div class="cntContentLesson">
+        <video
+          class="vedio-tutorial"
+          controls
+          muted
+          poster=""
+          preload="auto"
+          crossorigin="anonymous"
+        >
+          <source src="" type="video/mp4" />
+          المتصفح الذي تعمل بيه لا يدعم خاصية هذا الفيديو
+        </video>
+      </div>
+      <div class="descrVideo">
+        <h1 class="titleLesson"></h1>
+      </div>
+    </div>
+    <div class="L" dir="rtl">
+      <h1 class="titleLesson"></h1>
+      <div class="cntContentLessonL"></div>
+    </div>
+    <div class="lessonAsPDF">
+      <h1 class="titleLesson"></h1>
+
+      <a href="" class="linkPDF_lesson" target="_blank">
+        <img src="StudentSpace/icones/expand.png" alt="" />
+        <p>عرض الدرس</p>
+      </a>
+
+      <a href="#" class="linkPDF_lesson2">
+        <img src="./ProfessorSpace/icones/file.png" alt="" />
+        <p>تنزيل الدرس</p>
+      </a>
+    </div>
+    <div class="spraye">
+      <p class="descSpareer"></p>
+      <h1 class="title_sprayer"></h1>
+      <a class="btn_get_sprayer2 d_c" href="#" target="_blank"
+        ><img src="./StudentSpace/icones/expand.png" alt="" /> عرض
+      </a>
+      <a class="btn_get_sprayer d_c" href="#"
+        ><img src="./ProfessorSpace/icones/download.png" alt="" /> تنزيل
+      </a>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="MAINJS/SEARCH_PAGE.js"></script>
+  </body>
+</html>

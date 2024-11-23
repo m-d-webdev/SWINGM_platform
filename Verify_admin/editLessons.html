@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Lessons</title>
+    <link rel="stylesheet" href="../MAINCSS/anmateDone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/editLessons.css">
+</head>
+
+<body dir="rtl">
+    <div class="ptitlePage">
+        <button onclick="window.history.back()">
+            <img src="icones/left.png" class="imgBNtrowLeft" alt="">
+            <p>عودة </p>
+        </button>
+        <h1>صفحة تعديل الدروس والإمتحانات </h1>
+    </div>
+    <div class="bareSearch">
+        <select name="" id="itemType">
+            <option value="lessons">درس</option>
+            <option value="EXAM">امتحان</option>
+            <option value="CRUST">جذاذة</option>
+        </select>
+
+        <input type="text" placeholder="  العنوان   " autocomplete="off" id="inpSearch">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="44" height="44"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+        </svg>
+        <div class="cntResults">
+        </div>
+    </div>
+
+
+    <div class="addPDFLESON  animate__animated  cntForm" dir="rtl">
+        <h1 class="titleFORM"> درس PDF </h1>
+        <div class="cntComponent">
+            <label for="nameLessonPDF" class="kbkINP">اسم الدرس </label>
+            <input type="text" name="nameLessonPDF" id="nameLessonPDF" placeholder="">
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentAREA cntChosesed">
+            <form action="">
+
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREApdf" value="مجال الجغرافيا" id="firstAreachooseFPDF">
+                    <label for="firstAreachooseFPDF">مجال الجغرافيا</label>
+                </div>
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREApdf" value="مجال التاريخ" id="firstAreachooseFPDF2">
+                    <label for="firstAreachooseFPDF2">مجال التاريخ</label>
+                </div>
+            </form>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentYT ">
+            <label for="lessonlevel" class="">المستوى الدراسي </label>
+            <select name="lessonlevel" id="lessonlevel">
+                <option value="">إختر المستوى الدراسي </option>
+                <option value="lyce1">جذع مشترك </option>
+                <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+            </select>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <p class="alertsasdfafda">إذا تود تغيير درس PDF ، فيجب عليك حدف هذا الإمتحان ، و إضافة واحد أخر مع الملف المرغوب
+            إضافته </p>
+    </div>
+    <div class="addVIDEOlesson animate__animated  cntForm" dir="rtl">
+        <h1 class="titleFORM"> درس مصور </h1>
+        <div class="cntComponent">
+            <label for="inpNameLessonV" class="kbkINP">اسم الدرس </label>
+            <input type="text" id="inpNameLessonV" name="inpNameLessonV" placeholder="">
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentAREA cntChosesed2">
+            <form action="">
+
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREAvideo" value="مجال الجغرافيا" id="firstAreachooseVEDIO">
+                    <label for="firstAreachooseVEDIO">مجال الجغرافيا</label>
+                </div>
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREAvideo" value="مجال التاريخ" id="firstAreachooseVEDIO2">
+                    <label for="firstAreachooseVEDIO2">مجال التاريخ</label>
+                </div>
+            </form>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentYT ">
+            <label for="lessonlevel" class="">المستوى الدراسي </label>
+            <select name="lessonlevel" id="lessonlevel">
+                <option value="">إختر المستوى الدراسي </option>
+                <option value="lyce1">جذع مشترك </option>
+                <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+            </select>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <p class="alertsasdfafda">إذا تود تغيير الفيديو ، فيجب عليك حدف هذا الدرس ، و إضافة واحد أخر مع الفيديو المرغوب
+            إضافته </p>
+        <video src="" controls class="videoSelected" controlslist="nodownload"></video>
+    </div>
+    <div class="addLessonAsText animate__animated  cntForm" dir="rtl">
+        <h1 class="titleFORM"> درس مكتوب </h1>
+        <div class="cntComponent">
+            <label for="inpNameLesson" class="kbkINP">اسم الدرس </label>
+            <input type="text" name="inpNameLessonTEXT" id="inpNameLesson" placeholder="">
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentAREA cntChosesed3">
+            <form action="">
+
+                <div class="cntVHOSE ">
+                    <input type="radio" name="lessonAREAtext" value="مجال الجغرافيا" id="firstAreachooseTEXT">
+                    <label for="firstAreachooseTEXT">مجال الجغرافيا</label>
+                </div>
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREAtext" value="مجال التاريخ" id="secondAreachooseTEXT">
+                    <label for="secondAreachooseTEXT">مجال التاريخ</label>
+                </div>
+            </form>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentYT ">
+            <label for="lessonlevel" class="">المستوى الدراسي </label>
+            <select name="lessonlevel" id="lessonlevel">
+                <option value="">إختر المستوى الدراسي </option>
+                <option value="lyce1">جذع مشترك </option>
+                <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+            </select>
+            <button class="btnSave">حفظ </button>
+        </div>
+
+        <div class="cntTexarea">
+            <p class="desction">يمكن إضافة أو تعديل أو إزالة محتوى الدرس من هنا </p>
+            <div class="btnsWrite">
+                <button type="button" class="btnWrite" id="btnAddGrnadetitle">
+                    <img src="./icones/window.png" alt="">
+                </button>
+                <button type="button" class="btnWrite" id="btnAddSecondtitle">
+                    <img src="./icones/upward-arrow.png" alt="">
+                </button>
+                <button type="button" class="btnWrite" id="btnAddThirdtitle">
+                    <img src="./icones/down.png" alt="">
+                </button>
+
+                <button type="button" class="btnWrite" id="btnAddparagraphe">
+                    <img src="./icones/align-left.png" alt="">
+                </button>
+            </div>
+            <div class="cntINPwriting">
+                <textarea id="inpPrepareText" placeholder="أكتب هنا ...."></textarea>
+                <button type="button" class="btnAddText">إضافة إلى النص </button>
+                <p class="errorP">محتوى الدرس فارغ </p>
+            </div>
+            <div class="cnttextLesson"></div>
+            <button class="btnSave" id="SaveTextEdited">حفظ </button>
+        </div>
+    </div>
+    <div class="addSprayer animate__animated  cntForm" dir="rtl">
+        <h1 class="titleFORM"> جذاذة </h1>
+        <div class="cntComponent">
+            <label for="inpNmaeSprayer" class="kbkINP">عنوان جذاذة </label>
+            <input type="text" name="inpNmaeSprayer" id="inpNmaeSprayer" placeholder="">
+            <button class="btnSave">حفظ </button>
+        </div>
+
+        <div class="cntComponentAREA cntChosesed4">
+            <form action="">
+
+                <div class="cntVHOSE ">
+                    <input type="radio" name="lessonAREAsprayer" value="مجال الجغرافيا" id="firstAreachooseSPRAYER">
+                    <label for="firstAreachooseSPRAYER">مجال الجغرافيا</label>
+                </div>
+
+                <div class="cntVHOSE">
+                    <input type="radio" name="lessonAREAsprayer" value="مجال التاريخ" id="secondAreachooseSPRAYER">
+                    <label for="secondAreachooseSPRAYER">مجال التاريخ</label>
+                </div>
+            </form>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentYT ">
+            <label for="lessonlevel" class="">المستوى الدراسي </label>
+            <select name="lessonlevel" id="lessonlevel">
+                <option value="">إختر المستوى الدراسي </option>
+                <option value="lyce1">جذع مشترك </option>
+                <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+            </select>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <p class="alertsasdfafda">إذا تود تغيير جذاذة ، فيجب عليك حدف هذا الدرس ، و إضافة واحد أخر مع الملف المرغوب
+            إضافته </p>
+    </div>
+    <div class="addExam animate__animated  cntForm" dir="rtl">
+        <h1 class="titleFORM"> إمتحان </h1>
+        <div class="cntComponent">
+            <label for="inpNameExam" class="kbkINP">عنوان الامتحان
+            </label>
+            <input type="text" name="inpNameExam" id="inpNameExam" placeholder="">
+            <button class="btnSave">حفظ </button>
+        </div>
+        <div class="cntComponentYT ">
+            <label for="lessonlevel" class="">المستوى الدراسي </label>
+            <select name="lessonlevel" id="lessonlevel">
+                <option value="">إختر المستوى الدراسي </option>
+                <option value="lyce1">جذع مشترك </option>
+                <option value="bac13OLOM">السنة أولى بكالوريا (علوم) </option>
+                <option value="bac1ADABPlus3olom"> أولى بكالوريا (أداب و علوم إنسانية) </option>
+                <option value="bac2ADABPLUS3olom">السنة ثانية بكالوريا (أداب و علوم إنسانية )</option>
+            </select>
+            <button class="btnSave">حفظ </button>
+        </div>
+        <p class="alertsasdfafda">إذا تود تغيير جذاذة ، فيجب عليك حدف هذا الإمتحان ، و إضافة واحد أخر مع الملف المرغوب
+            إضافته </p>
+    </div>
+
+    <h1 class="bigTile">
+        <img src="./icones/window.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h1>
+    <h3 class="secondTile">
+        <img src="./icones/upward-arrow.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h3>
+    <h5 class="thirdTile">
+        <img src="./icones/down.png" alt="">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </h5>
+    <div class="textLesson">
+        <p class="inerhTml"> </p>
+        <div class="cntButtonREGLE">
+            <button type="button" class="btnRewrit"><img src="./icones/pencil.png" alt=""></button>
+            <button type="button" class="btnRemove"><img src="./icones/trash.png" alt=""></button>
+        </div>
+    </div>
+    <script src="../MAINJS/anmateDone.js"></script>
+    <script>
+
+
+        function _(m) { console.log(m) };
+        function D(elem, className = "s-X3z-V4rB-H8tQ") { elem.forEach(e => e.classList.add(className)) };
+        function R(elem, className = "s-X3z-V4rB-H8tQ") { elem.forEach(e => e.classList.remove(className)) };
+
+
+        let inpSeach = document.getElementById("inpSearch");
+        let itemType = document.getElementById("itemType");
+        let cntResults = document.querySelector(".cntResults");
+        itemType.onchange = () => {
+            inpSeach.value = "";
+        }
+        inpSeach.onkeyup = () => {
+            cntResults.replaceChildren();
+            D([cntResults]);
+            let search = inpSeach.value;
+            search = search.trimStart();
+            if (search.length > 1) {
+                $.post(
+                    './php/searchForElem.php', {
+                    lesson_type: itemType.value,
+                    columnName: "lesson_name",
+                    tableName: "tutorials",
+                    search: search
+                }
+                ).done(
+                    res => {
+                        res = JSON.parse(res);
+                        if (res.length == 0) {
+                            let p = document.createElement("p");
+                            p.innerHTML = "لا يوجد نتائج";
+                            cntResults.appendChild(p);
+                        }
+                        res.forEach(element => {
+                            let button = document.createElement("button");
+                            button.innerHTML = element.lesson_name;
+                            button.onclick = () => {
+                                inpSeach.value = element.lesson_name;
+                                Search(element.lesson_type);
+                            }
+                            cntResults.appendChild(button);
+                        });
+                    }
+                )
+            }
+
+        }
+
+        window.onload = () => {
+            inpSeach.focus();
+        }
+
+
+        function saveEdit(columnName, NewValue, btn, idLesson) {
+            startLoader();
+            $.post(
+                './php/editInfo.php', {
+                tableName: 'tutorials',
+                Id_column_name: 'lesson_id',
+                Id_value: idLesson,
+                columnName: columnName,
+                NewValue: NewValue
+            }
+            ).done(
+                res => {
+                    if (res == "done") {
+                        stopLoader();
+                        R([btn]);
+                    }
+                }
+            )
+
+        }
+
+
+        //All INPUTS FOR TEXT LESSONS =====>
+        let addLessonAsText = document.querySelector(".addLessonAsText");
+        let inpNameLessonTEXT = addLessonAsText.querySelector("#inpNameLesson");
+        let radiosTEXT = document.getElementsByName('lessonAREAtext');
+        let lessonlevelTEXT = addLessonAsText.querySelector("#lessonlevel");
+        let btnsWrite = addLessonAsText.querySelector(".btnsWrite");
+        let textaresPrepareContent = addLessonAsText.querySelector(".cntINPwriting textarea");
+        let cnttextLesson = addLessonAsText.querySelector(".cnttextLesson");
+        function makeEditOn_TEXT_Lesosn() {
+            inpNameLessonTEXT.onchange = () => {
+                let btnSaveEdit = inpNameLessonTEXT.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_name", inpNameLessonTEXT.value, btnSaveEdit, addLessonAsText.getAttribute("lesson_id"));
+                }
+            }
+            radiosTEXT[0].onclick = () => {
+                let btnSaveEdit = radiosTEXT[0].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueTEXT;
+                for (let i = 0; i < radiosTEXT.length; i++) {
+                    if (radiosTEXT[i].checked) {
+                        selectedValueTEXT = radiosTEXT[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueTEXT, btnSaveEdit, addLessonAsText.getAttribute("lesson_id"));
+                }
+            }
+            radiosTEXT[1].onclick = () => {
+                let btnSaveEdit = radiosTEXT[1].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueTEXT;
+                for (let i = 0; i < radiosTEXT.length; i++) {
+                    if (radiosTEXT[i].checked) {
+                        selectedValueTEXT = radiosTEXT[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueTEXT, btnSaveEdit, addLessonAsText.getAttribute("lesson_id"));
+                }
+            }
+            lessonlevelTEXT.onchange = () => {
+                let btnSaveEdit = lessonlevelTEXT.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("level_school", lessonlevelTEXT.value, btnSaveEdit, addLessonAsText.getAttribute("lesson_id"));
+                }
+
+            };
+
+            let secondTiles = cnttextLesson.querySelectorAll("h3");
+            let bigTiles = cnttextLesson.querySelectorAll("h1");
+            let thirdTiles = cnttextLesson.querySelectorAll("h5");
+            let textLessons = cnttextLesson.querySelectorAll(".textLesson");
+            if (secondTiles.length > 0) {
+                textLessons.forEach(element => {
+                    accessElemtn_in_text(element);
+                })
+            }
+            if (thirdTiles.length > 0) {
+                thirdTiles.forEach(element => {
+                    accessElemtn_in_text(element);
+                })
+            }
+            if (secondTiles.length > 0) {
+                secondTiles.forEach(element => {
+                    accessElemtn_in_text(element);
+                })
+            }
+            if (bigTiles.length > 0) {
+                bigTiles.forEach(element => {
+                    accessElemtn_in_text(element);
+                })
+            }
+
+        }
+        let btnAddText = addLessonAsText.querySelector(".btnAddText");
+        function updateElem(elem) {
+            btnAddText.disabled = true;
+            btnAddText.innerText = 'تحديث';
+            textaresPrepareContent.value = elem.querySelector(".inerhTml").innerHTML;
+            textaresPrepareContent.style.height = "auto";
+            textaresPrepareContent.style.height = textaresPrepareContent.scrollHeight + "px";
+            textaresPrepareContent.focus();
+            textaresPrepareContent.onchange = () => {
+                btnAddText.disabled = false;
+                btnAddText.onclick = () => {
+                    elem.querySelector(".inerhTml").innerHTML = textaresPrepareContent.value;
+                    D([SaveTextEdited])
+                    addToText();
+                }
+            }
+        }
+        let thirdTile = document.querySelector(".thirdTile");
+        let secondTile = document.querySelector(".secondTile");
+        let bigTile = document.querySelector(".bigTile");
+        let textLesson = document.querySelector(".textLesson");
+        let btnWrite = addLessonAsText.querySelectorAll(".btnWrite");
+        addToText();
+        function addToText() {
+            textaresPrepareContent.value = "";
+            btnAddText.disabled = true;
+            btnAddText.innerText = 'إضافة إلى النص ';
+            textaresPrepareContent.style.height = "auto";
+            textaresPrepareContent.style.height = textaresPrepareContent.scrollHeight + "px";
+            btnWrite.forEach(element => {
+                R([element], "activeBTNwrite");
+            })
+            let choosedElem2;
+            btnWrite[0].onclick = () => {
+                textaresPrepareContent.focus();
+                choosedElem2 = bigTile.cloneNode(true);
+                btnWrite.forEach(element => {
+                    R([element], "activeBTNwrite");
+                })
+                D([btnWrite[0]], "activeBTNwrite");
+            }
+            btnWrite[1].onclick = () => {
+                textaresPrepareContent.focus();
+                choosedElem2 = secondTile.cloneNode(true);
+                btnWrite.forEach(element => {
+                    R([element], "activeBTNwrite");
+                })
+                D([btnWrite[1]], "activeBTNwrite");
+            }
+            btnWrite[2].onclick = () => {
+                textaresPrepareContent.focus();
+                choosedElem2 = thirdTile.cloneNode(true);
+                btnWrite.forEach(element => {
+                    R([element], "activeBTNwrite");
+                })
+                D([btnWrite[2]], "activeBTNwrite");
+            }
+            btnWrite[3].onclick = () => {
+                textaresPrepareContent.focus();
+                choosedElem2 = textLesson.cloneNode(true);
+                btnWrite.forEach(element => {
+                    R([element], "activeBTNwrite");
+                })
+                D([btnWrite[3]], "activeBTNwrite");
+            }
+            textaresPrepareContent.onchange = () => {
+                btnAddText.disabled = false;
+                btnAddText.onclick = () => {
+                    if (choosedElem2 != undefined) {
+                        choosedElem2.querySelector(".inerhTml").innerHTML = textaresPrepareContent.value;
+
+                        D([choosedElem2]);
+                        D([choosedElem2], 'newElemAdded');
+                        D([SaveTextEdited])
+                        cnttextLesson.appendChild(choosedElem2);
+                        accessElemtn_in_text(choosedElem2);
+                        textaresPrepareContent.value = "";
+
+                        btnWrite.forEach(element => {
+                            R([element], "activeBTNwrite");
+                        });
+
+                        choosedElem2 = undefined;
+                        textaresPrepareContent.style.height = "auto";
+                        textaresPrepareContent.style.height = textaresPrepareContent.scrollHeight + "px";
+                    }
+                }
+            }
+        }
+        let deletedOldelem = false;
+        function accessElemtn_in_text(element) {
+            let btnRewrit = element.querySelector(".btnRewrit");
+            let btnRemove = element.querySelector(".btnRemove");
+
+            btnRewrit.onclick = () => {
+                updateElem(element);
+            }
+            btnRemove.onclick = () => {
+                if (element.classList.contains('newElemAdded')) {
+                    element.remove();
+                    checkAdded();
+                } else {
+                    deletedOldelem = true;
+                    element.remove();
+                    checkAdded();
+                }
+
+            }
+
+        }
+        let SaveTextEdited = document.querySelector("#SaveTextEdited");
+        SaveTextEdited.onclick = () => {
+            startLoader();
+            let content = cnttextLesson;
+            if (content.querySelectorAll(".newElemAdded")) {
+                content.querySelectorAll(".newElemAdded").forEach(elem => R([elem], "newElemAdded"));
+            }
+            $.post(
+                './php/saveText.php', {
+                text_path: cnttextLesson.getAttribute("lesson_path"),
+                text: content.innerHTML
+            }
+            ).done(
+                res => {
+                    if (res == "done") {
+                        stopLoader();
+                    }
+                }
+            )
+        }
+        function checkAdded() {
+            if (cnttextLesson.querySelector(".newElemAdded") || deletedOldelem) {
+                D([SaveTextEdited])
+            } else {
+                R([SaveTextEdited])
+            }
+        }
+
+        // FINISHED .
+        // All INPUTS FOR VIDEO LESSONS =====>
+
+
+        let addVIDEOlesson = document.querySelector(".addVIDEOlesson");
+        let inpNameLessonVIDEO = addVIDEOlesson.querySelector("#inpNameLessonV");
+        let videoSelected = addVIDEOlesson.querySelector(".videoSelected");
+        let radiosVIDEO = document.getElementsByName('lessonAREAvideo');
+        let lessonlevelVIDEP = addVIDEOlesson.querySelector("#lessonlevel");
+        let selectedValuePDF;
+        makeEditOn_VIDEO_Lesosn();
+        function makeEditOn_VIDEO_Lesosn() {
+            inpNameLessonVIDEO.onchange = () => {
+                let btnSaveEdit = inpNameLessonVIDEO.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_name", inpNameLessonVIDEO.value, btnSaveEdit, addVIDEOlesson.getAttribute("lesson_id"));
+                }
+            }
+            radiosVIDEO[0].onclick = () => {
+                let btnSaveEdit = radiosVIDEO[0].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValuePDF;
+                for (let i = 0; i < radiosVIDEO.length; i++) {
+                    if (radiosVIDEO[i].checked) {
+                        selectedValuePDF = radiosVIDEO[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValuePDF, btnSaveEdit, addVIDEOlesson.getAttribute("lesson_id"));
+                }
+            }
+            radiosVIDEO[1].onclick = () => {
+                let btnSaveEdit = radiosVIDEO[1].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValuePDF;
+                for (let i = 0; i < radiosVIDEO.length; i++) {
+                    if (radiosVIDEO[i].checked) {
+                        selectedValuePDF = radiosVIDEO[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValuePDF, btnSaveEdit, addVIDEOlesson.getAttribute("lesson_id"));
+                }
+            }
+
+            lessonlevelVIDEP.onchange = () => {
+                let btnSaveEdit = lessonlevelVIDEP.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("level_school", lessonlevelVIDEP.value, btnSaveEdit, addVIDEOlesson.getAttribute("lesson_id"));
+                }
+
+            };
+        }
+
+
+        // All INPUTS FOR PDF LESSONS =====>
+        let addPDFLESON = document.querySelector(".addPDFLESON");
+        let INPNameLessonPDF = addPDFLESON.querySelector("#nameLessonPDF");
+        let lessonlevelPDF = addPDFLESON.querySelector("#lessonlevel");
+        let radiosPDF = document.getElementsByName('lessonAREApdf');
+        let selectedValueLPDF;
+
+        makeEditOn_PDF_Lesosn();
+        function makeEditOn_PDF_Lesosn() {
+            INPNameLessonPDF.onchange = () => {
+                let btnSaveEdit = INPNameLessonPDF.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_name", INPNameLessonPDF.value, btnSaveEdit, addPDFLESON.getAttribute("lesson_id"));
+                }
+            }
+
+            radiosPDF[0].onclick = () => {
+                let btnSaveEdit = radiosPDF[0].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueLPDF;
+                for (let i = 0; i < radiosPDF.length; i++) {
+                    if (radiosPDF[i].checked) {
+                        selectedValueLPDF = radiosPDF[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueLPDF, btnSaveEdit, addPDFLESON.getAttribute("lesson_id"));
+                }
+            }
+            radiosPDF[1].onclick = () => {
+                let btnSaveEdit = radiosPDF[1].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueLPDF;
+                for (let i = 0; i < radiosPDF.length; i++) {
+                    if (radiosPDF[i].checked) {
+                        selectedValueLPDF = radiosPDF[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueLPDF, btnSaveEdit, addPDFLESON.getAttribute("lesson_id"));
+                }
+            }
+
+            lessonlevelPDF.onchange = () => {
+                let btnSaveEdit = lessonlevelPDF.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("level_school", lessonlevelPDF.value, btnSaveEdit, addPDFLESON.getAttribute("lesson_id"));
+                }
+
+            };
+        }
+
+
+        // All INPUTS FOR SPRAYER LESSONS =====>
+        let addSprayer = document.querySelector(".addSprayer");
+        let INPNameLessonSPRAYER = addSprayer.querySelector("#inpNmaeSprayer");
+        let radiosSPAYER = document.getElementsByName('lessonAREAsprayer');
+        let lessonlevelSPRAYER = addSprayer.querySelector("#lessonlevel");
+        makeEditOn_SPRAYER_Lesosn();
+        function makeEditOn_SPRAYER_Lesosn() {
+            INPNameLessonSPRAYER.onchange = () => {
+                let btnSaveEdit = INPNameLessonSPRAYER.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_name", INPNameLessonSPRAYER.value, btnSaveEdit, addSprayer.getAttribute("lesson_id"));
+                }
+            }
+
+            radiosSPAYER[0].onclick = () => {
+                let btnSaveEdit = radiosSPAYER[0].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueLPDF;
+                for (let i = 0; i < radiosSPAYER.length; i++) {
+                    if (radiosSPAYER[i].checked) {
+                        selectedValueLPDF = radiosSPAYER[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueLPDF, btnSaveEdit, addSprayer.getAttribute("lesson_id"));
+                }
+            }
+            radiosSPAYER[1].onclick = () => {
+                let btnSaveEdit = radiosSPAYER[1].parentNode.parentNode.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                let selectedValueLPDF;
+                for (let i = 0; i < radiosSPAYER.length; i++) {
+                    if (radiosSPAYER[i].checked) {
+                        selectedValueLPDF = radiosSPAYER[i].value;
+                        break;
+                    }
+                }
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_area", selectedValueLPDF, btnSaveEdit, addSprayer.getAttribute("lesson_id"));
+                }
+            }
+
+            lessonlevelSPRAYER.onchange = () => {
+                let btnSaveEdit = lessonlevelSPRAYER.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("level_school", lessonlevelSPRAYER.value, btnSaveEdit, addSprayer.getAttribute("lesson_id"));
+                }
+
+            };
+        }
+
+
+        // All INPUTS FOR EXAM LESSONS =====>
+        let addExam = document.querySelector(".addExam");
+        let INPNameLessonEXAM = document.getElementById("inpNameExam");
+        let lessonlevelEXAM = addExam.querySelector("#lessonlevel");
+        makeEditOn_EXAM_Lesosn();
+        function makeEditOn_EXAM_Lesosn() {
+            INPNameLessonEXAM.onchange = () => {
+                let btnSaveEdit = INPNameLessonEXAM.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("lesson_name", INPNameLessonEXAM.value, btnSaveEdit, addExam.getAttribute("lesson_id"));
+                }
+            }
+
+            lessonlevelEXAM.onchange = () => {
+                let btnSaveEdit = lessonlevelEXAM.parentNode.querySelector(".btnSave")
+                D([btnSaveEdit]);
+                btnSaveEdit.onclick = () => {
+                    saveEdit("level_school", lessonlevelEXAM.value, btnSaveEdit, addExam.getAttribute("lesson_id"));
+                }
+
+            };
+        }
+
+
+
+        // ==========================================================================================================
+        function Search(lesson_type) {
+            R([cntResults]);
+            let resarch = inpSeach.value;
+            resarch = resarch.trimStart();
+            $.post(
+                './php/getElement.php', {
+                columnName: "lesson_name",
+                tableName: "tutorials",
+                lesson_type: lesson_type,
+                search: resarch
+            }
+            ).done(
+                res => {
+                    res = JSON.parse(res);
+                    let LessonObject = res[0];
+                    if (LessonObject.lesson_type == "TEXT") {
+                        d([addLessonAsText]);
+                        addLessonAsText.setAttribute("lesson_id", LessonObject.lesson_id);
+                        inpNameLessonTEXT.value = LessonObject.lesson_name;
+                        let lecel = LessonObject.level_school;
+                        let optionLevel = lessonlevelTEXT.querySelectorAll("option");
+                        for (var o = 0; o < optionLevel.length; o++) {
+                            if (optionLevel[o].value == lecel) {
+                                optionLevel[o].selected = true;
+                                break;
+                            }
+                        }
+
+                        let lessonAREAasdf = LessonObject.lesson_area;
+                        for (let i = 0; i < radiosTEXT.length; i++) {
+                            if (radiosTEXT[i].value == lessonAREAasdf) {
+                                radiosTEXT[i].checked = true;
+                                break;
+                            }
+                        }
+                        $.get(
+                            `.././${LessonObject.lesson_path}`
+                        ).done(
+                            res => {
+                                cnttextLesson.setAttribute("lesson_path", LessonObject.lesson_path);
+                                cnttextLesson.innerHTML = JSON.parse(res);
+                                makeEditOn_TEXT_Lesosn();
+                            }
+                        )
+
+                    }
+                    else if (LessonObject.lesson_type == "VIDEO") {
+                        d([addVIDEOlesson]);
+                        addVIDEOlesson.setAttribute("lesson_id", LessonObject.lesson_id);
+                        inpNameLessonVIDEO.value = LessonObject.lesson_name;
+                        let lecel = LessonObject.level_school;
+                        videoSelected.setAttribute("src", ".././" + LessonObject.lesson_path);
+                        D([videoSelected]);
+                        let optionLevel = lessonlevelVIDEP.querySelectorAll("option");
+
+                        for (var o = 0; o < optionLevel.length; o++) {
+                            if (optionLevel[o].value == lecel) {
+                                optionLevel[o].selected = true;
+                                break;
+                            }
+                        }
+
+                        let lessonAREAasdf = LessonObject.lesson_area;
+                        for (let i = 0; i < radiosVIDEO.length; i++) {
+                            if (radiosVIDEO[i].value == lessonAREAasdf) {
+                                radiosVIDEO[i].checked = true;
+                                break;
+                            }
+                        }
+                    }
+                    else if (LessonObject.lesson_type == "PDF") {
+                        d([addPDFLESON]);
+                        addPDFLESON.setAttribute("lesson_id", LessonObject.lesson_id);
+                        INPNameLessonPDF.value = LessonObject.lesson_name;
+                        let lecel = LessonObject.level_school;
+                        let optionLevel = lessonlevelPDF.querySelectorAll("option");
+
+                        for (var o = 0; o < optionLevel.length; o++) {
+                            if (optionLevel[o].value == lecel) {
+                                optionLevel[o].selected = true;
+                                break;
+                            }
+                        }
+
+                        let lessonAREAasdf = LessonObject.lesson_area;
+                        for (let i = 0; i < radiosPDF.length; i++) {
+                            if (radiosPDF[i].value == lessonAREAasdf) {
+                                radiosPDF[i].checked = true;
+                                break;
+                            }
+                        }
+                    }
+                    else if (LessonObject.lesson_type == "CRUST") {
+                        d([addSprayer]);
+                        addSprayer.setAttribute("lesson_id", LessonObject.lesson_id);
+                        INPNameLessonSPRAYER.value = LessonObject.lesson_name;
+                        let lecel = LessonObject.level_school;
+                        let optionLevel = lessonlevelSPRAYER.querySelectorAll("option");
+                        for (var o = 0; o < optionLevel.length; o++) {
+                            if (optionLevel[o].value == lecel) {
+                                optionLevel[o].selected = true;
+                                break;
+                            }
+                        }
+
+
+                        let lessonAREAasdf = LessonObject.lesson_area;
+                        for (let i = 0; i < radiosSPAYER.length; i++) {
+                            if (radiosSPAYER[i].value == lessonAREAasdf) {
+                                radiosSPAYER[i].checked = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    else if (LessonObject.lesson_type == "EXAM") {
+                        d([addExam]);
+                        addExam.setAttribute("lesson_id", LessonObject.lesson_id);
+                        INPNameLessonEXAM.value = LessonObject.lesson_name;
+                        let lecel = LessonObject.level_school;
+                        let optionLevel = lessonlevelEXAM.querySelectorAll("option");
+                        for (var o = 0; o < optionLevel.length; o++) {
+                            if (optionLevel[o].value == lecel) {
+                                optionLevel[o].selected = true;
+                                break;
+                            }
+                        }
+                    }
+                }
+            )
+        }
+
+    </script>
+</body>
+
+</html>

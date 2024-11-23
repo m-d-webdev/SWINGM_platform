@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./MAINCSS/pageContact.css">
+    <link rel="stylesheet" href="./MAINCSS/anmateDone.css">
+</head>
+
+<body dir="rtl">
+
+    <div class="container">
+        <h1>تواصل معنا</h1>
+        <p>مرحباً بكم في صفحة التواصل مع <strong>SWINGM</strong>. إذا كان لديكم أي استفسارات أو أسئلة، يُرجى عدم التردد
+            في التواصل معنا من خلال المعلومات التالية:</p>
+
+        <div class="contact-info">
+            <p><strong>البريد الإلكتروني:</strong> g.swingm@gmail.com </p>
+            <p><strong>الهاتف:</strong>076731612</p>
+        </div>
+
+        <form action="./MAINPHP/contactUs.php" method="post">
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" dir="ltr" id="email" name="email" required>
+
+            <label for="subject">الموضوع:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+    <div class="shadowDIV " dir="ltr">
+        <div class="PUP_UPASK_YES_NO animate__animated d_c">
+            <img src="./MEDIA/checkmark.png" id="" alt=""
+                class="IconeMessageSuccess animate__animated animate__bounceInDown">
+            <img src="./MEDIA/attention.png" id="" alt="" class="IconeMessageNotice animate__animated animate__flash">
+            <img src="./MEDIA/rejected.png" id="" alt="" class="IconeMessageError animate__animated animate__wobble">
+            <p class="MessgaeText"></p>
+            <div class="cnt_btns d_c">
+                <button id="btn_accept"> نعم</button>
+                <button id="btn_refuse">تراجع</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./MAINJS/anmateDone.js"></script>
+    <script src="./MAINJS/contactUs.js"></script>
+</body>
+
+</html>

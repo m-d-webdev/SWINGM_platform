@@ -1,0 +1,822 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Cairo", serif;
+       */
+  font-size: 15px !important;
+  font-weight: 600;
+
+  font-family: "Fustat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#btn_back:hover .imgBack {
+  transform: translateX(-20px);
+}
+#btn_back {
+  /* position: absolute; */
+  align-self: end;
+  top: 5px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: #fff;
+  padding: 4px;
+  width: 150px;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #1a73e8;
+}
+#btn_back img {
+  width: 15px;
+  margin-right: 14px;
+  transition: 0.2s;
+}
+
+.main_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f4f422;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+.mainInfo {
+  width: 60%;
+  max-width: 800px;
+  height: 550px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.202));
+  animation-duration: 0.2s;
+  /* display: none; */
+}
+
+.elem1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  /* height: 100%; */
+}
+#userJob {
+  position: absolute;
+  top: 240px;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 2px 8px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.cnt_img_user {
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.505));
+}
+
+.cnt_img_user img {
+  width: 100%;
+  /* height: 100%;
+    m */
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+/*  */
+
+.elem2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 100%; */
+}
+
+.elem3 {
+  height: 150px;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: end;
+  justify-content: space-evenly;
+  /* height: 100%; */
+  width: 100%;
+  max-width: 600px;
+  margin-top: 90px;
+}
+
+.cnt_Frend_div3 button img {
+  width: 20px;
+  margin-right: 10px;
+}
+.cnt_Frend_div3 button {
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+.cnt_Frend_div3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.follee_compoent2:hover{
+  color: #fff;
+}
+.follee_compoent2:hover::after {
+  height: 100%;
+  background-color: #1a73e8;
+}
+.follee_compoent2:after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #1a73e8;
+  transition: .3s;
+  border-radius: 10px 10px 0 0;
+    z-index: 2;
+
+
+}
+.follee_compoent2 p {
+  position: relative;
+  z-index: 3;
+}
+.follee_compoent2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  position: relative;
+  color: #000000;
+  width: 40%;
+  background-color: #f7faff;
+  border-radius: 10px 10px 0 0;
+  margin-left: 15px;
+}
+#btn_folloe {
+  width: 300px;
+  padding: 6px;
+}
+
+.IMP_ELE1 {
+  margin-right: 15px;
+  font-size: 18px;
+  font-family: "Kanit", sans-serif;
+}
+/* --------------------- */
+
+.IntroCard p {
+  font-size: 17px !important;
+}
+.IntroCard img {
+  width: 25px;
+  margin-left: 10px;
+}
+.IntroCard {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------------------------- ================================== */
+
+/* =========================================== */
+.FILTER_DIV {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.447);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  left: 0;
+  display: none;
+}
+
+.cnt_fullLISTFRIEND {
+  padding-top: 40px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  animation: asdno 0.2s linear;
+  display: none;
+}
+
+@keyframes asdno {
+  0% {
+    transform: scaleY(0.5);
+  }
+}
+
+.title_cntasd {
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  font-family: "Fustat", sans-serif;
+  font-size: 20px;
+}
+
+.list_follers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  padding: 5px;
+  position: relative;
+}
+
+.cnt_followers {
+  width: 100%;
+  padding: 5px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 1px rgba(0, 0, 0, 0.177);
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.cnt_imgFOL img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.cnt_followers button:hover {
+  opacity: 1;
+}
+
+.cnt_followers button {
+  position: absolute;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  color: red;
+}
+
+.cnt_imgFOL {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+/* cnt_notifications */
+.cnt_notifications {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: asdno 0.2s linear;
+  max-width: 800px;
+  padding: 15px;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  padding-top: 40px;
+  display: none;
+}
+
+.list_notf {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+
+.cnt_notif {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  position: relative;
+  display: none;
+  padding-bottom: 25px;
+}
+
+.time_notf {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  right: 85px;
+}
+
+.notif_text {
+  max-width: 90%;
+}
+
+.cnt_imgnotf img {
+  max-width: 100%;
+}
+
+.cnt_imgnotf {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+/* --------------------------- */
+
+.CNT_OCNFIRMDIV {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.716);
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  left: 0;
+  display: none;
+}
+.cntConfirm img {
+  width: 80px;
+}
+.cntConfirm {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 600px;
+  padding: 15px;
+  width: 100%;
+  height: 400px;
+  animation-duration: 0.4s;
+  display: none;
+}
+.cntBtnsConfirm {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 400px;
+}
+#btnAccept {
+  background-color: rgb(14, 111, 92);
+  padding: 4px;
+  width: 100px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+#btnCancel {
+  background-color: rgb(255, 255, 255);
+  padding: 4px;
+  width: 100px;
+  border: solid 1px rgba(0, 0, 0, 0.484);
+  color: #000000;
+  border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+  * {
+    font-size: 10px !important;
+  }
+  #btn_back {
+    padding: 2px;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #1a73e8;
+  }
+  #btn_back img {
+    width: 12px;
+  }
+  
+  .main_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f4f422;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+
+  .mainInfo {
+    width: 100%;
+    max-width: 800px;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #000000;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .elem1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+    /* height: 100%; */
+  }
+  #userJob {
+    position: absolute;
+    top: 140px;
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 2px 8px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .cnt_img_user {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.505));
+  }
+  /*  */
+  
+  .elem3 {
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    /* height: 100%; */
+    width: 100%;
+    max-width: none;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .cnt_Frend_div3 button img {
+    width: 15px;
+    margin-right: 10px;
+  }
+  .cnt_Frend_div3 button {
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .cnt_Frend_div3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .follee_compoent2 p {
+    position: relative;
+    z-index: 3;
+  }
+  .follee_compoent2:hover::after{
+    background-color: #fff;
+  }
+  .follee_compoent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    position: relative;
+    color: #ffffff;
+    width: auto;
+    margin-left: 15px;
+  }
+  #btn_folloe {
+    width: 300px;
+    padding: 6px;
+  }
+  
+  .IMP_ELE1 {
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+  }
+  /* --------------------- */
+  
+  .IntroCard p {
+    font-size: 17px !important;
+  }
+  .IntroCard img {
+    width: 25px;
+    margin-left: 10px;
+  }
+  .IntroCard {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* ------------------------------------- ================================== */
+  
+  /* =========================================== */
+  .FILTER_DIV {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.447);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    display: none;
+  }
+  
+  .cnt_fullLISTFRIEND {
+    padding-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    animation: asdno 0.2s linear;
+    display: none;
+  }
+  
+  @keyframes asdno {
+    0% {
+      transform: scaleY(0.5);
+    }
+  }
+  
+  .title_cntasd {
+    position: absolute;
+    top: 6px;
+    right: 18px;
+    font-family: "Fustat", sans-serif;
+    font-size: 20px;
+  }
+  
+  .list_follers {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .cnt_followers {
+    width: 100%;
+    padding: 5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.177);
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  .cnt_imgFOL img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .cnt_followers button:hover {
+    opacity: 1;
+  }
+  
+  .cnt_followers button {
+    position: absolute;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+    cursor: pointer;
+    color: red;
+  }
+  
+  .cnt_imgFOL {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  
+  /* cnt_notifications */
+  .cnt_notifications {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: asdno 0.2s linear;
+    max-width: 800px;
+    padding: 15px;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding-top: 40px;
+    display: none;
+  }
+  
+  .list_notf {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .cnt_notif {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    position: relative;
+    display: none;
+    padding-bottom: 25px;
+  }
+  
+  .time_notf {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    right: 85px;
+  }
+  
+  .notif_text {
+    max-width: 90%;
+  }
+  
+  .cnt_imgnotf img {
+    max-width: 100%;
+  }
+  
+  .cnt_imgnotf {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  /* --------------------------- */
+  
+  .CNT_OCNFIRMDIV {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.716);
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    display: none;
+  }
+  .cntConfirm img {
+    width: 80px;
+  }
+  .cntConfirm {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    padding: 15px;
+    width: 100%;
+    height: 400px;
+    animation-duration: 0.4s;
+    display: none;
+  }
+  .cntBtnsConfirm {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 400px;
+  }
+  #btnAccept {
+    background-color: rgb(14, 111, 92);
+    padding: 4px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+  }
+  #btnCancel {
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    width: 100px;
+    border: solid 1px rgba(0, 0, 0, 0.484);
+    color: #000000;
+    border-radius: 5px;
+  }
+  
+  
+  
+}
+
+.s-X3z-V4rB-H8tQ {
+  display: flex;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./MAINCSS/anmateDone.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="MAINCSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <main class="main_login">
+        <div class="logo">
+            <img src="ResearcherSpace/icones/logo_rem.png" alt="">
+            <p>مرحبا ،يرجى إدخال معلومات الإتصال الخاصة بك لولوج منصاتنا أو قم بإنشاء حساب جديد </p>
+            <img src="MEDIA/undraw_Access_account_re_8spm.png" alt="" class="backIMG">
+        </div>
+        <form action="" id="form_login">
+            <p class="titleFOMR">تسجيل الدخول </p>
+            <!-- <button id="btn_canc_login" type="button"><img src="icones/cn1.png" alt=""></button> -->
+            <div class="matrc">
+                <p class="err_email">لديك مشكلة هاي هذا العنوان </p>
+                <img src="ResearcherSpace/icones/profile3.png" alt="">
+                <div class="cnt_email">
+                    <input type="email"  id="inp_email" name="inp_email" placeholder="">
+                    <label for="inp_email" class="lbl_login">E-mail</label>
+                </div>
+            </div>
+            <div class="matrc">
+                <p class="err_pass">كلمة المرور غير صحيحة </p>
+                <img src="ResearcherSpace/icones/cadenas.png" alt="">
+                <div class="cnt_pass">
+                    <input type="text" autocomplete="off" id="inp_pass" name="inp_pass" placeholder="">
+                    <label for="inp_pass" class="lbl_login">Password</label>
+                    <P class="show_pass"></P>
+                </div>
+            </div>
+            <button type="button" id="btn_submi_login">إرسال </button>
+            <a href="page_sign_in.html" class="btn_create_acc">إنشاء حساب </a>
+        </form>
+    </main>
+    <div class="shadowDiv">
+        <div class="cntPopUpConckies">
+            <img src="MEDIA/coockies.png" alt="">
+            <p>نحن نستعمل ملفات تعريف الإرتباط ، هل توافق على ذلك ؟</p>
+            <div>
+                <button id="btn_refuseCoockie">لا </button>
+                <button id="btn_donfrCoockie">أوافق </button>
+            </div>
+        </div>
+    </div>
+    <div class="shadowDIV d_c">
+        <div class="PUP_UPASK_YES_NO animate__animated ">
+            <img src="./MEDIA/checkmark.png" id="" alt=""
+                class="IconeMessageSuccess animate__animated animate__bounce">
+            <img src="./MEDIA/attention.png" id="" alt=""
+                class="IconeMessageNotice animate__animated animate__flash">
+            <img src="./MEDIA/rejected.png" id="" alt="" class="IconeMessageError animate__animated animate__wobble">
+            <p class="MessgaeText"></p>
+            <div class="cnt_btns d_c">
+                <button id="btn_accept"> نعم</button>
+                <button id="btn_refuse">تراجع</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./MAINJS/anmateDone.js"></script>
+    <script src="MAINJS/LOGIN.js"></script>
+</body>
+
+</html>

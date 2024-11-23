@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/exams.css">
+</head>
+
+<body dir="rtl">
+    <main class="MAIN_PAGE">
+        <div class="SideBare">
+            <button>
+                <p> جدع مشترك </p>
+            </button>
+            <button>
+                <p> أولى باكلوريا أدب</p>
+            </button>
+            <button>
+                <p>أولى باكلوريا علوم </p>
+            </button>
+            <button>
+                <p> ثانية بكالوريا آداب و علوم إنسانية </p>
+            </button>
+        </div>
+        <div class="container">
+
+        </div>
+    </main>
+    <div class="CntExam">
+        <h1></h1>
+        <a href="#" class="linkPDF_lesson" target="_blank">
+            <p>عرض الدرس </p>
+            <img src=".././StudentSpace/icones/expand.png" alt="">
+        </a>
+        <a href="#" class="linkPDF_lesson2" target="">
+            <p>تنزيل الدرس </p>
+            <img src="../ProfessorSpace/icones/file.png" alt="">
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script>
+
+        function d(elem, d = 's-X3z-V4rB-H8tQ') { elem.forEach(e => e.classList.add(d)); }
+
+        function r(elem, d = 's-X3z-V4rB-H8tQ') { elem.forEach(e => e.classList.remove(d)); }
+
+        let btnsSwitchExam = document.querySelectorAll('.SideBare button');
+        btnsSwitchExam.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (document.querySelector(".activeBtn1")) {
+                    r([document.querySelector(".activeBtn1")], "activeBtn1");
+                }
+
+                d([btn], "activeBtn1");
+            })
+        })
+
+        $(document).ready(function () {
+            $.get("./php/getExams.php").done((res) => {
+                res = JSON.parse(res);
+                console.log(res)
+                res.forEach((obj) => {
+                    objectLevel[obj.level_school].push(obj);
+                });
+
+            });
+        });
+
+        let objectLevel = {
+            lyce1: [],
+            bac13OLOM: [],
+            bac1ADABPlus3olom: [],
+            bac2ADABPLUS3olom: [],
+        }
+
+        btnsSwitchExam[0].onclick = () => {
+            document.querySelector(".container").innerHTML = "";
+            if (objectLevel.lyce1.length == 0) {
+                document.querySelector(".container").innerHTML = "لا يوجد إمتحانات لهذا المستوى ";
+            } 
+            objectLevel.lyce1.forEach(element => {
+                let CloneCntExam = document.querySelector('.CntExam').cloneNode(true);
+                d([CloneCntExam]);
+                CloneCntExam.querySelector("h1").innerHTML = element.lesson_name
+                CloneCntExam.querySelector(".linkPDF_lesson").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('download', element.lesson_name)
+                CloneCntExam.setAttribute("lesson_id", element.lesson_id)
+                document.querySelector(".container").append(CloneCntExam);
+            });
+        }
+
+        btnsSwitchExam[1].onclick = () => {
+            document.querySelector(".container").innerHTML = "";
+            if (objectLevel.bac13OLOM.length == 0) {
+                document.querySelector(".container").innerHTML = "لا يوجد إمتحانات لهذا المستوى ";
+            }  objectLevel.bac13OLOM.forEach(element => {
+                let CloneCntExam = document.querySelector('.CntExam').cloneNode(true);
+                d([CloneCntExam]);
+                CloneCntExam.querySelector("h1").innerHTML = element.lesson_name
+                CloneCntExam.querySelector(".linkPDF_lesson").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('download', element.lesson_name)
+                CloneCntExam.setAttribute("lesson_id", element.lesson_id)
+                document.querySelector(".container").append(CloneCntExam);
+            });
+        }
+
+        btnsSwitchExam[2].onclick = () => {
+            document.querySelector(".container").innerHTML = "";
+            if (objectLevel.bac1ADABPlus3olom.length == 0) {
+                document.querySelector(".container").innerHTML = "لا يوجد إمتحانات لهذا المستوى ";
+            } 
+            objectLevel.bac1ADABPlus3olom.forEach(element => {
+                let CloneCntExam = document.querySelector('.CntExam').cloneNode(true);
+                d([CloneCntExam]);
+           
+                CloneCntExam.querySelector("h1").innerHTML = element.lesson_name
+                CloneCntExam.querySelector(".linkPDF_lesson").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('download', element.lesson_name)
+                CloneCntExam.setAttribute("lesson_id", element.lesson_id)
+                document.querySelector(".container").append(CloneCntExam);
+            });
+        }
+
+        btnsSwitchExam[3].onclick = () => {
+            document.querySelector(".container").innerHTML = "";
+            if (objectLevel.bac2ADABPLUS3olom.length == 0) {
+                document.querySelector(".container").innerHTML = "لا يوجد إمتحانات لهذا المستوى ";
+            }
+
+            objectLevel.bac2ADABPLUS3olom.forEach(element => {
+                let CloneCntExam = document.querySelector('.CntExam').cloneNode(true);
+                d([CloneCntExam]);
+                CloneCntExam.querySelector("h1").innerHTML = element.lesson_name
+                CloneCntExam.querySelector(".linkPDF_lesson").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('href', "../" + element.lesson_path)
+                CloneCntExam.querySelector(".linkPDF_lesson2").setAttribute('download', element.lesson_name)
+                CloneCntExam.setAttribute("lesson_id", element.lesson_id)
+                document.querySelector(".container").append(CloneCntExam);
+            });
+        }
+    </script>
+</body>
+
+</html>
